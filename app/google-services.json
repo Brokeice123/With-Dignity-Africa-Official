@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "509471063059",
+    "firebase_url": "https://with-dignity-final-default-rtdb.firebaseio.com",
+    "project_id": "with-dignity-final",
+    "storage_bucket": "with-dignity-final.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:509471063059:android:ddb457972701274fa1d3e6",
+        "android_client_info": {
+          "package_name": "com.example.withdignityfinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "509471063059-2b3ivon8f5r0ku0s9e176en25apq9f1q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.withdignityfinal",
+            "certificate_hash": "0dc5070da65673043a78461637a948a9122ee4cc"
+          }
+        },
+        {
+          "client_id": "509471063059-m1ffthd0882npj91qbfb00je35pr53si.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSyjknxct6POtm4AjwUZZQxdZCk4_8lgg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "509471063059-m1ffthd0882npj91qbfb00je35pr53si.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
