@@ -71,10 +71,11 @@
         android:layout_marginRight="20dp"
         android:layout_marginTop="300dp"
         android:fontFamily="@font/average"
-        android:text="Welcome to With Dignity Africa, the best place to ease funeral arranegments for you!"
+        android:text="Welcome to With Dignity Africa, the best place to ease funeral arrangements for you!"
         android:textColor="#C97886"
         android:textSize="20sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
 
     <TextView
         android:id="@+id/textView4"

@@ -19,14 +19,14 @@ import com.google.firebase.auth.GoogleAuthProvider
 
 class SignInActivity : AppCompatActivity() {
 
-    lateinit var log_edt_email: EditText
-    lateinit var log_edt_password: EditText
-    lateinit var log_btn_log: Button
+    private lateinit var log_edt_email: EditText
+    private lateinit var log_edt_password: EditText
+    private lateinit var log_btn_log: Button
 
 
     private lateinit var client: GoogleSignInClient
-    lateinit var btnGoogleSignIn:ImageView
-    lateinit var auth: FirebaseAuth
+    private lateinit var btnGoogleSignIn:ImageView
+    private lateinit var auth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
