@@ -11,18 +11,20 @@
     <Toolbar
         android:layout_width="match_parent"
         android:id="@+id/hometoolbar"
-        android:layout_height="50dp"
-        android:background="#CFCCCC">
+        android:layout_height="55dp"
+        android:background="#ffff">
 
         <TextView
-            android:layout_width="wrap_content"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="serif"
             android:text="Home Page"
             android:textColor="#CB7987"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            tools:ignore="HardcodedText" />
 
     </Toolbar>
 
@@ -30,7 +32,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:id="@+id/searchbar_home"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:background="@drawable/edt_background"
@@ -50,10 +52,11 @@
 
             <!-- Your CardViews go here -->
             <androidx.cardview.widget.CardView
-                android:layout_width="160dp"
-                android:layout_height="200dp"
+                android:layout_width="180dp"
+                android:layout_height="300dp"
                 app:cardCornerRadius="5dp"
-                android:layout_margin="20dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="15dp"
                 android:background="@drawable/edt_background">
 
                 <!-- Add your image, text, or other content here -->
@@ -70,17 +73,31 @@
                     android:textColor="#CB7987"
                     android:fontFamily="serif"
                     android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="135dp"
-                    android:textSize="20dp"/>
+                    android:textSize="17sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="You dont know what to do and need us to call you immediately "
+                    android:textColor="@color/black"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="190dp"
+                    android:textSize="17sp"/>
+
 
             </androidx.cardview.widget.CardView>
 
             <!-- Your CardViews go here -->
             <androidx.cardview.widget.CardView
-                android:layout_width="160dp"
-                android:layout_height="200dp"
+                android:layout_width="180dp"
+                android:layout_height="300dp"
                 app:cardCornerRadius="6dp"
-                android:layout_margin="20dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
                 android:background="@color/white">
 
                 <!-- Add your image, text, or other content here -->
@@ -97,17 +114,29 @@
                     android:textColor="#CB7987"
                     android:fontFamily="serif"
                     android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="135dp"
                     android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="All inclusive funeral packages: Platinum, Gold or silver for your... "
+                    android:textColor="@color/black"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="190dp"
+                    android:textSize="17sp"/>
 
             </androidx.cardview.widget.CardView>
 
             <!-- Your CardViews go here -->
             <androidx.cardview.widget.CardView
-                android:layout_width="160dp"
-                android:layout_height="200dp"
+                android:layout_width="180dp"
+                android:layout_height="300dp"
                 app:cardCornerRadius="6dp"
-                android:layout_margin="20dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="15dp"
                 android:background="@color/white">
 
                 <!-- Add your image, text, or other content here -->
@@ -124,17 +153,29 @@
                     android:textColor="#CB7987"
                     android:fontFamily="serif"
                     android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="135dp"
                     android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Select a service: Pickups,coffins, flowers, book a church... "
+                    android:textColor="@color/black"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="190dp"
+                    android:textSize="17sp"/>
 
             </androidx.cardview.widget.CardView>
 
             <!-- Your CardViews go here -->
             <androidx.cardview.widget.CardView
-                android:layout_width="160dp"
-                android:layout_height="200dp"
+                android:layout_width="180dp"
+                android:layout_height="300dp"
                 app:cardCornerRadius="6dp"
-                android:layout_margin="20dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
                 android:background="@color/white">
 
                 <!-- Add your image, text, or other content here -->
@@ -151,17 +192,29 @@
                     android:textColor="#CB7987"
                     android:fontFamily="serif"
                     android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="135dp"
                     android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Get your will done in 7 Minutes or less"
+                    android:textColor="@color/black"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="190dp"
+                    android:textSize="17sp"/>
 
             </androidx.cardview.widget.CardView>
 
             <!-- Your CardViews go here -->
             <androidx.cardview.widget.CardView
-                android:layout_width="160dp"
-                android:layout_height="200dp"
+                android:layout_width="180dp"
+                android:layout_height="300dp"
                 app:cardCornerRadius="6dp"
-                android:layout_margin="20dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="15dp"
                 android:background="@color/white">
 
                 <!-- Add your image, text, or other content here -->
@@ -178,17 +231,29 @@
                     android:textColor="#CB7987"
                     android:fontFamily="serif"
                     android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="135dp"
                     android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="All the tasks you need to perform for the funeral "
+                    android:textColor="@color/black"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="190dp"
+                    android:textSize="17sp"/>
 
             </androidx.cardview.widget.CardView>
 
             <!-- Your CardViews go here -->
             <androidx.cardview.widget.CardView
-                android:layout_width="160dp"
-                android:layout_height="200dp"
+                android:layout_width="180dp"
+                android:layout_height="300dp"
                 app:cardCornerRadius="6dp"
-                android:layout_margin="20dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
                 android:background="@color/white">
 
                 <!-- Add your image, text, or other content here -->
@@ -205,17 +270,29 @@
                     android:textColor="#CB7987"
                     android:fontFamily="serif"
                     android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="135dp"
                     android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Comprehensive coverage in the event of death "
+                    android:textColor="@color/black"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="190dp"
+                    android:textSize="17sp"/>
 
             </androidx.cardview.widget.CardView>
 
             <!-- Your CardViews go here -->
             <androidx.cardview.widget.CardView
-                android:layout_width="160dp"
-                android:layout_height="200dp"
+                android:layout_width="180dp"
+                android:layout_height="300dp"
                 app:cardCornerRadius="6dp"
-                android:layout_margin="20dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="15dp"
                 android:background="@color/white">
 
                 <!-- Add your image, text, or other content here -->
@@ -232,17 +309,29 @@
                     android:textColor="#CB7987"
                     android:fontFamily="serif"
                     android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="135dp"
+                    android:textSize="17sp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Find services for AVBOB clients "
+                    android:textColor="@color/black"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="200dp"
                     android:textSize="17sp"/>
 
             </androidx.cardview.widget.CardView>
 
             <!-- Your CardViews go here -->
             <androidx.cardview.widget.CardView
-                android:layout_width="160dp"
-                android:layout_height="200dp"
+                android:layout_width="180dp"
+                android:layout_height="300dp"
                 app:cardCornerRadius="6dp"
-                android:layout_margin="20dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
                 android:background="@color/white">
 
                 <!-- Add your image, text, or other content here -->
@@ -259,17 +348,29 @@
                     android:textColor="#CB7987"
                     android:fontFamily="serif"
                     android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="135dp"
                     android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Pre-plan and pre-order all the tasks you need to perform for the... "
+                    android:textColor="@color/black"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="190dp"
+                    android:textSize="17sp"/>
 
             </androidx.cardview.widget.CardView>
 
             <!-- Your CardViews go here -->
             <androidx.cardview.widget.CardView
-                android:layout_width="160dp"
-                android:layout_height="200dp"
+                android:layout_width="180dp"
+                android:layout_height="300dp"
                 app:cardCornerRadius="6dp"
-                android:layout_margin="20dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="15dp"
                 android:background="@color/white">
 
                 <!-- Add your image, text, or other content here -->
@@ -286,17 +387,29 @@
                     android:textColor="#CB7987"
                     android:fontFamily="serif"
                     android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="135dp"
                     android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Find Help and frequently asked questions "
+                    android:textColor="@color/black"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="190dp"
+                    android:textSize="17sp"/>
 
             </androidx.cardview.widget.CardView>
 
             <!-- Your CardViews go here -->
             <androidx.cardview.widget.CardView
-                android:layout_width="160dp"
-                android:layout_height="200dp"
+                android:layout_width="180dp"
+                android:layout_height="300dp"
                 app:cardCornerRadius="6dp"
-                android:layout_margin="20dp"
+                android:layout_margin="5dp"
+                android:layout_marginLeft="5dp"
                 android:background="@color/white">
 
                 <!-- Add your image, text, or other content here -->
@@ -313,8 +426,19 @@
                     android:textColor="#CB7987"
                     android:fontFamily="serif"
                     android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
                     android:layout_marginTop="135dp"
                     android:textSize="20dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Read and search for advice and articles "
+                    android:textColor="@color/black"
+                    android:fontFamily="serif"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="190dp"
+                    android:textSize="17sp"/>
 
             </androidx.cardview.widget.CardView>
 
