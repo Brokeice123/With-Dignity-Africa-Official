@@ -65,7 +65,7 @@ class SignInActivity : AppCompatActivity() {
                 auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this) {
                     if (it.isSuccessful){
                         Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
-                        var gotomain = Intent(this, OptionsPageActivity::class.java)
+                        var gotomain = Intent(this, MainActivity::class.java)
                         startActivity(gotomain)
                         finish()
                     } else{
@@ -108,7 +108,7 @@ class SignInActivity : AppCompatActivity() {
     override fun onStart() {
         super.onStart()
         if(FirebaseAuth.getInstance().currentUser != null){
-            val i  = Intent(this,OptionsPageActivity::class.java)
+            val i  = Intent(this,MainActivity::class.java)
             startActivity(i)
         }
     }

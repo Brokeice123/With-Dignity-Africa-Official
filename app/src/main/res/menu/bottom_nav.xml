@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_bottomnav"
+        android:icon="@drawable/homeicon"
+        android:title="Home" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/package_bottomnav"
+        android:icon="@drawable/list"
+        android:title="Funeral Package" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/findfuneral_bottomnav"
+        android:icon="@drawable/searchicon"
+        android:title="Find Funeral" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/help_bottomnav"
+        android:icon="@drawable/helpicon"
+        android:title="Help/FAQ's" />
+    <item
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkout_bottomnav"
+        android:icon="@drawable/carticon"
+        android:title="Checkout" />
+</menu>
