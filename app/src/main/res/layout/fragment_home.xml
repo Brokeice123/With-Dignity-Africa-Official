@@ -33,6 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
+        android:id="@+id/home_scrollview"
         android:layout_below="@+id/hometoolbar">
 
         <GridLayout
@@ -46,6 +47,7 @@
                 android:layout_width="180dp"
                 android:layout_height="270dp"
                 app:cardCornerRadius="5dp"
+                android:id="@+id/panic_cardview"
                 android:layout_margin="5dp"
                 android:layout_marginLeft="15dp">
 
@@ -87,6 +89,7 @@
                 android:layout_height="270dp"
                 app:cardCornerRadius="6dp"
                 android:layout_margin="5dp"
+                android:id="@+id/packages_cardview"
                 android:layout_marginLeft="5dp"
                 android:background="@color/white">
 
@@ -126,6 +129,7 @@
                 android:layout_height="270dp"
                 app:cardCornerRadius="6dp"
                 android:layout_margin="5dp"
+                android:id="@+id/service_cardview"
                 android:layout_marginLeft="15dp"
                 android:background="@color/white">
 
@@ -164,6 +168,7 @@
                 android:layout_height="270dp"
                 app:cardCornerRadius="6dp"
                 android:layout_margin="5dp"
+                android:id="@+id/will_cardview"
                 android:layout_marginLeft="5dp"
                 android:background="@color/white">
 
@@ -202,6 +207,7 @@
                 android:layout_height="270dp"
                 app:cardCornerRadius="6dp"
                 android:layout_margin="5dp"
+                android:id="@+id/checklist_cardview"
                 android:layout_marginLeft="15dp"
                 android:background="@color/white">
 
@@ -240,6 +246,7 @@
                 android:layout_height="270dp"
                 app:cardCornerRadius="6dp"
                 android:layout_margin="5dp"
+                android:id="@+id/policy_cardview"
                 android:layout_marginLeft="5dp"
                 android:background="@color/white">
 
@@ -278,6 +285,7 @@
                 android:layout_height="270dp"
                 app:cardCornerRadius="6dp"
                 android:layout_margin="5dp"
+                android:id="@+id/avbob_cardview"
                 android:layout_marginLeft="15dp"
                 android:background="@color/white">
 
@@ -316,6 +324,7 @@
                 android:layout_height="270dp"
                 app:cardCornerRadius="6dp"
                 android:layout_margin="5dp"
+                android:id="@+id/preplan_cardview"
                 android:layout_marginLeft="5dp"
                 android:background="@color/white">
 
@@ -354,6 +363,7 @@
                 android:layout_height="270dp"
                 app:cardCornerRadius="6dp"
                 android:layout_margin="5dp"
+                android:id="@+id/help_cardview"
                 android:layout_marginLeft="15dp"
                 android:background="@color/white">
 
@@ -392,6 +402,7 @@
                 android:layout_height="270dp"
                 app:cardCornerRadius="6dp"
                 android:layout_margin="5dp"
+                android:id="@+id/advice_cardview"
                 android:layout_marginLeft="5dp"
                 android:background="@color/white">
 
