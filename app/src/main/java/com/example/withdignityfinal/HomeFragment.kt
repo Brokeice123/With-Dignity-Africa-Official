@@ -13,53 +13,133 @@ import androidx.navigation.NavController
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
+@Suppress("UNREACHABLE_CODE")
 class HomeFragment : Fragment() {
 
-    private lateinit var scrollView: HorizontalScrollView
-    private lateinit var panicCardView: CardView
-    private lateinit var packagesCardView: CardView
-    private lateinit var serviceCardView: CardView
-    private lateinit var willCardView: CardView
-    private lateinit var checklistCardView: CardView
-    private lateinit var policyCardView: CardView
-    private lateinit var avbobCardView: CardView
-    private lateinit var preplanCardView: CardView
-    private lateinit var helpCardView: CardView
-    private lateinit var adviceCardView: CardView
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
 
-        panicCardView = view.findViewById(R.id.panic_cardview)
-        packagesCardView = view.findViewById(R.id.packages_cardview)
-        serviceCardView = view.findViewById(R.id.service_cardview)
-        willCardView = view.findViewById(R.id.will_cardview)
-        checklistCardView = view.findViewById(R.id.checklist_cardview)
-        policyCardView = view.findViewById(R.id.policy_cardview)
-        avbobCardView = view.findViewById(R.id.avbob_cardview)
-        preplanCardView = view.findViewById(R.id.preplan_cardview)
-        helpCardView = view.findViewById(R.id.help_cardview)
-        adviceCardView = view.findViewById(R.id.advice_cardview)
+        val paniccardView = view.findViewById<CardView>(R.id.panic_cardview)
+        paniccardView.setOnClickListener {
+            // Handle click event here
+            val fragment = PanicFragment()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_container, fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
 
-        panicCardView.setOnClickListener {  }
-        packagesCardView.setOnClickListener {  }
-        serviceCardView.setOnClickListener {  }
-        willCardView.setOnClickListener {  }
-        checklistCardView.setOnClickListener {  }
-        policyCardView.setOnClickListener {  }
-        avbobCardView.setOnClickListener {  }
-        preplanCardView.setOnClickListener {  }
-        helpCardView.setOnClickListener {  }
-        adviceCardView.setOnClickListener {  }
+        val packagescardView = view.findViewById<CardView>(R.id.packages_cardview)
+        packagescardView.setOnClickListener {
+            // Handle click event here
+            val fragment = FuneralPackageFragment()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_container, fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+
+        val servicescardView = view.findViewById<CardView>(R.id.service_cardview)
+        servicescardView.setOnClickListener {
+            // Handle click event here
+            val fragment = FindFuneralFragment()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_container, fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+
+        val willcardView = view.findViewById<CardView>(R.id.will_cardview)
+        willcardView.setOnClickListener {
+            // Handle click event here
+            val fragment = WillFragment()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_container, fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+
+        val checklistcardView = view.findViewById<CardView>(R.id.checklist_cardview)
+        checklistcardView.setOnClickListener {
+            // Handle click event here
+            val fragment = ChecklistFragment()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_container, fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+
+        val policycardView = view.findViewById<CardView>(R.id.policy_cardview)
+        policycardView.setOnClickListener {
+            // Handle click event here
+            val fragment = PolicyFragment()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_container, fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+
+        val preplancardView = view.findViewById<CardView>(R.id.preplan_cardview)
+        preplancardView.setOnClickListener {
+            // Handle click event here
+            val fragment = PreplanFragment()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_container, fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+
+        val helpcardView = view.findViewById<CardView>(R.id.help_cardview)
+        helpcardView.setOnClickListener {
+            // Handle click event here
+            val fragment = HelpFragment()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_container, fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+
+        val advicecardView = view.findViewById<CardView>(R.id.advice_cardview)
+        advicecardView.setOnClickListener {
+            // Handle click event here
+            val fragment = AdviceFragment()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_container, fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+
+        return view
+
+        val scrollView= view?.findViewById<HorizontalScrollView>(R.id.home_scrollview)
+
+
+
+        if (scrollView != null) {
+            scrollView.setOnContextClickListener(){Item ->
+                when(Item.id){
+                    R.id.panic_cardview -> {
+                        replaceFragment(PanicFragment())
+                        true
+                    }
+                    else -> false
+                }
+            }
+        }
 
     }
 
-    private fun findViewById(homeScrollview: Int): HorizontalScrollView {
-        TODO("Not yet implemented")
+    private fun replaceFragment(fragment: Fragment) {
+        val transaction = requireActivity().supportFragmentManager.beginTransaction()
+        transaction.replace(R.id.frame_container, fragment)
+        transaction.addToBackStack(null)
+        transaction.commit()
     }
 
 
