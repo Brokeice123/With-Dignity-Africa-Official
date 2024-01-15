@@ -3,12 +3,678 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ChecklistFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/hometoolbar"
+            android:layout_height="60dp"
+            android:background="#ffff">
+
+            <TextView
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:text="What to do when someone dies"
+                android:textColor="#CB7987"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:background="@drawable/flower_background_removebg_preview_1" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:layout_alignParentBottom="true"
+            android:layout_marginTop="520dp"
+            android:background="@drawable/flower_background_removebg_preview_2" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:text="Swipe to read next steps"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="680dp"
+            android:backgroundTint="@color/pink"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:background="@drawable/edt_background"
+            tools:ignore="HardcodedText"/>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="60dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="1"
+                android:orientation="horizontal"
+                android:rowCount="4">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:background="@drawable/breathe" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="180dp"
+                        android:fontFamily="@font/abel"
+                        android:text="Breathe"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="220dp"
+                        android:fontFamily="@font/abel"
+                        android:text="Breathe... Take a minute. It is always jarring and sad to get the call
+    that someone you love has passed on. The reactions will always vary from shock, denial, disbelief to a feeling of complete numbness. What is almost certain is that you will feel overwhelmed
+    by all things that need to be done for your loved one now they can no longer do it themselves. It is important to remember that the way you are feeling is normal and to acknowledge your feelings is normal and to acknowledge your feelings. Unfortunately, certain activities must still happen."
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/hospitalbed" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="200dp"
+                        android:fontFamily="@font/abel"
+                        android:text="Pickup"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="240dp"
+                        android:fontFamily="@font/abel"
+                        android:text="Whether your loved one is in a hospital, at home or in a hospice, they will need to be picked up and their remains prepared for burial
+    or cremation. N.B. The loved one will typically be required to do many other services such as booking a graveside, preparation of the body and transport of your loved
+    one to the service and cemetery"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/documents" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="200dp"
+                        android:fontFamily="@font/abel"
+                        android:text="Collection of Documents"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="240dp"
+                        android:fontFamily="@font/abel"
+                        android:text="You will need to get: the 'Notice of Death' from the hospital or doctor certifying the death
+    . A copy of the deceased person's ID which is certified and stamped as 'Deceased'. A copy of your loved one's 'Last will and testament'.
+    A copy of your loved one's funeral or life insurance policy"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/notify" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="200dp"
+                        android:fontFamily="@font/abel"
+                        android:text="Family Notifications"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="240dp"
+                        android:fontFamily="@font/abel"
+                        android:text="You will need to notify at least the immediate family of your loved one. They deserve to know what has happened and usually, families support each otherand decide
+    collectively on what to do to get through this challenge time. This is also the time to notify your loved one's Imam, Priest or Rabbi if they had one."
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/insuranceplan" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="200dp"
+                        android:fontFamily="@font/abel"
+                        android:text="Start the life &amp; funeral insurance claims process"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="265dp"
+                        android:fontFamily="@font/abel"
+                        android:text="You will need to claim from any policies your loved one had with insurers. You will need the documentation from step 4 for this."
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/cremationandburial_image" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="210dp"
+                        android:fontFamily="@font/abel"
+                        android:text="Choose a funeral or cremation"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="240dp"
+                        android:fontFamily="@font/abel"
+                        android:text=" Did your loved on want a funeral or cremation."
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/coffinandurn" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="210dp"
+                        android:fontFamily="@font/abel"
+                        android:text="Choose a Coffin or Urn"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="240dp"
+                        android:fontFamily="@font/abel"
+                        android:text="You will need to choose a Coffin or Urn"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/service" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="210dp"
+                        android:fontFamily="@font/abel"
+                        android:text="Decide on the type of service"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="240dp"
+                        android:fontFamily="@font/abel"
+                        android:text="Did your loved one want a religous or non denominational service?"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/questionsfuneral_image" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="210dp"
+                        android:fontFamily="@font/abel"
+                        android:text="Book Church/Mosque/Shul for service"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="270dp"
+                        android:fontFamily="@font/abel"
+                        android:text="You will need to book a venue for the service. It is best to book a venue that is not too far from the cemetery where they will be buried."
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/transport" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="210dp"
+                        android:fontFamily="@font/abel"
+                        android:text="Arrange transportation for relatives"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="270dp"
+                        android:fontFamily="@font/abel"
+                        android:text="It is customary to book transportation for some of your relatives to attend the service and burial"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/flowers" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="210dp"
+                        android:fontFamily="@font/abel"
+                        android:text="Book flowers and select arrangement"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="270dp"
+                        android:fontFamily="@font/abel"
+                        android:text="You will need to decide on and book floral arrangements and any decorations."
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/catering" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="210dp"
+                        android:fontFamily="@font/abel"
+                        android:text="Book Caterer"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="240dp"
+                        android:fontFamily="@font/abel"
+                        android:text="You will need to decide on and book catering arrangements for the reception. "
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/photograph" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="210dp"
+                        android:fontFamily="@font/abel"
+                        android:text="Book Photo/ Videographer"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="240dp"
+                        android:fontFamily="@font/abel"
+                        android:text="You will need to decide on and book a photographer or someone to film the proceedings. Videographer can also provide live streaming of the funeral."
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/invitation" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="210dp"
+                        android:fontFamily="@font/abel"
+                        android:text="Send out invitations"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="240dp"
+                        android:fontFamily="@font/abel"
+                        android:text="You will need to send out invitations to people that were close to the deceased."
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/newspapers" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="60dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="210dp"
+                        android:fontFamily="@font/abel"
+                        android:text="Issue an obituary in the relevant newspaper"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="270dp"
+                        android:fontFamily="@font/abel"
+                        android:text="You may want to issue an orbituary in the newspapers. You can also submit an obituary to be displayed on newspapers"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="370dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp"
+                    app:cardCornerRadius="15dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        android:background="@drawable/reception" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="52dp"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="210dp"
+                        android:fontFamily="@font/abel"
+                        android:text="Book reception venue"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="25sp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:layout_width="318dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="15dp"
+                        android:layout_marginTop="240dp"
+                        android:fontFamily="@font/abel"
+                        android:text="Will there be a reception afterwards? If so, where will it be held? You will need to book a venue if not held at a family home."
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        tools:ignore="HardcodedText" />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+        </HorizontalScrollView>
+
+
+    </RelativeLayout>
+
 
 </FrameLayout>
