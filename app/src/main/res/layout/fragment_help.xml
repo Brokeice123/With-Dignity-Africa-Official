@@ -57,7 +57,9 @@
                     android:layout_width="370dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="5dp"
-                    app:cardCornerRadius="15dp">
+                    app:cardCornerRadius="15dp"
+                    android:background="#F8F8F8"
+                    >
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -107,7 +109,9 @@
                     android:layout_width="370dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="10dp"
+                    android:background="#F8F8F8"
+                    >
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -160,7 +164,9 @@
                     android:layout_width="370dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="15dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="10dp"
+                    android:background="#F8F8F8"
+                    >
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -207,7 +213,9 @@
                     android:layout_width="370dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="15dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="10dp"
+                    android:background="#F8F8F8"
+                    >
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -247,7 +255,9 @@ and premises and who subscribe to our partner code of ethics.  The same way that
                     android:layout_width="370dp"
                     android:layout_height="match_parent"
                     app:cardCornerRadius="10dp"
-                    android:layout_marginStart="15dp">
+                    android:layout_marginStart="15dp"
+                    android:background="#F8F8F8"
+                    >
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -288,7 +298,9 @@ around your transition to the hereafter or next plane of existence.  Everything 
                     android:layout_width="370dp"
                     android:layout_height="match_parent"
                     app:cardCornerRadius="10dp"
-                    android:layout_marginStart="15dp">
+                    android:layout_marginStart="15dp"
+                    android:background="#F8F8F8"
+                    >
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -328,7 +340,9 @@ around your transition to the hereafter or next plane of existence.  Everything 
                     android:layout_width="370dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="15dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="10dp"
+                    android:background="#F8F8F8"
+                    >
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -367,7 +381,9 @@ around your transition to the hereafter or next plane of existence.  Everything 
                     android:layout_width="370dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="15dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="10dp"
+                    android:background="#F8F8F8"
+                    >
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -406,7 +422,9 @@ around your transition to the hereafter or next plane of existence.  Everything 
                     android:layout_width="370dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="15dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="10dp"
+                    android:background="#F8F8F8"
+                    >
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -446,7 +464,9 @@ around your transition to the hereafter or next plane of existence.  Everything 
                     android:layout_width="370dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="15dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="10dp"
+                    android:background="#F8F8F8"
+                    >
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -494,7 +514,9 @@ around your transition to the hereafter or next plane of existence.  Everything 
                     android:layout_width="370dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="15dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="10dp"
+                    android:background="#F8F8F8"
+                    >
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -533,7 +555,9 @@ around your transition to the hereafter or next plane of existence.  Everything 
                     android:layout_width="370dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="15dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="10dp"
+                    android:background="#F8F8F8"
+                    >
 
                     <ImageView
                         android:layout_width="match_parent"
@@ -574,7 +598,9 @@ ultimate convenience, safety and social distancing by dealing with all service p
                     android:layout_width="370dp"
                     android:layout_height="match_parent"
                     android:layout_marginStart="15dp"
-                    app:cardCornerRadius="10dp">
+                    app:cardCornerRadius="10dp"
+                    android:background="#F8F8F8"
+                    >
 
                     <ImageView
                         android:layout_width="match_parent"
