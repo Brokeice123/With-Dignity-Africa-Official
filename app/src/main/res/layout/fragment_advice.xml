@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".AdviceFragment">
 
     <RelativeLayout
@@ -29,20 +30,6 @@
 
         </Toolbar>
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="250dp"
-            android:background="@drawable/flower_background_removebg_preview_1" />
-
-        <ImageView
-            android:id="@+id/imageView3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:layout_alignParentBottom="true"
-            android:layout_marginTop="520dp"
-            android:background="@drawable/flower_background_removebg_preview_2" />
-
-
     </RelativeLayout>
 
     <ScrollView
@@ -60,7 +47,9 @@
         <androidx.cardview.widget.CardView
             android:layout_width="370dp"
             android:layout_height="300dp"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+            app:cardCornerRadius="15dp"
+            >
 
             <ImageView
                 android:layout_width="match_parent"
@@ -68,10 +57,9 @@
                 android:background="@drawable/griefing_man"/>
 
             <TextView
-                android:layout_width="318dp"
-                android:layout_height="52dp"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="200dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="230dp"
                 android:fontFamily="@font/abel"
                 android:text="How to help a friend who has lost someone"
                 android:textAlignment="center"
@@ -84,17 +72,18 @@
             android:layout_width="370dp"
             android:layout_height="300dp"
             android:layout_marginTop="20dp"
-            android:layout_gravity="center">
+            android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                >
                 <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="170dp"
                 android:background="@drawable/will_image"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="57dp"
-                    android:layout_marginLeft="17dp"
-                    android:layout_marginTop="220dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="230dp"
                     android:fontFamily="@font/abel"
                     android:text="What you need to know about making a will"
                     android:textAlignment="center"
@@ -107,18 +96,19 @@
                 android:layout_width="370dp"
                 android:layout_height="300dp"
                 android:layout_marginTop="20dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                >
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="170dp"
                     android:background="@drawable/checklist_image"/>
 
                 <TextView
-                    android:layout_width="366dp"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="220dp"
+                    android:layout_marginTop="230dp"
                     android:fontFamily="@font/abel"
                     android:text="What to do when someone dies: The definitive list"
                     android:textAlignment="center"
@@ -131,22 +121,23 @@
                 android:layout_width="370dp"
                 android:layout_height="300dp"
                 android:layout_marginTop="20dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                >
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="170dp"
                     android:background="@drawable/memorialfuneral_image"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="Honouring your loved one's memory: 12 creative and meaningful ways to personalise a funeral"
                     android:textColor="@color/black"
-                    android:layout_marginTop="220dp"
+                    android:layout_marginTop="230dp"
                     android:fontFamily="@font/abel"
                     android:textStyle="bold"
-                    android:layout_marginLeft="5dp"
                     android:textSize="20sp"
                     android:textAlignment="center"/>
             </androidx.cardview.widget.CardView>
@@ -155,22 +146,23 @@
                 android:layout_width="370dp"
                 android:layout_height="300dp"
                 android:layout_marginTop="20dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                >
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="170dp"
                     android:background="@drawable/livingfuneral_image"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="What is a living Funeral"
                     android:textColor="@color/black"
-                    android:layout_marginTop="220dp"
+                    android:layout_marginTop="230dp"
                     android:fontFamily="@font/abel"
                     android:textStyle="bold"
-                    android:layout_marginLeft="75dp"
                     android:textSize="25sp"
                     android:textAlignment="center"/>
             </androidx.cardview.widget.CardView>
@@ -179,21 +171,23 @@
                 android:layout_width="370dp"
                 android:layout_height="300dp"
                 android:layout_marginTop="20dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                >
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="170dp"
                     android:background="@drawable/deathpositive_image"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="Moving to a death positive mindset"
                     android:textColor="@color/black"
-                    android:layout_marginTop="220dp"
+                    android:layout_marginTop="230dp"
                     android:fontFamily="@font/abel"
-                    android:layout_marginLeft="55dp"
+                    android:textStyle="bold"
                     android:textSize="20sp"
                     android:textAlignment="center"/>
             </androidx.cardview.widget.CardView>
@@ -202,45 +196,23 @@
                 android:layout_width="370dp"
                 android:layout_height="300dp"
                 android:layout_marginTop="20dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                >
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="170dp"
                     android:background="@drawable/questionsfuneral_image"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="20 most common questions about a funeral"
                     android:textColor="@color/black"
-                    android:layout_marginTop="220dp"
-                    android:fontFamily="@font/abel"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="25sp"
-                    android:textAlignment="center"/>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="370dp"
-                android:layout_height="300dp"
-                android:layout_marginTop="20dp"
-                android:layout_gravity="center">
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="200dp"
-                    android:background="@drawable/culturalpractices_image"/>
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:text="Cultural practices around headstones and unveilings"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="220dp"
+                    android:layout_marginTop="230dp"
                     android:fontFamily="@font/abel"
                     android:textStyle="bold"
-                    android:layout_marginLeft="5dp"
                     android:textSize="20sp"
                     android:textAlignment="center"/>
             </androidx.cardview.widget.CardView>
@@ -249,22 +221,49 @@
                 android:layout_width="370dp"
                 android:layout_height="300dp"
                 android:layout_marginTop="20dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                >
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="170dp"
+                    android:background="@drawable/culturalpractices_image"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cultural practices around headstones and unveilings"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="230dp"
+                    android:fontFamily="@font/abel"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:textAlignment="center"/>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="300dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
                     android:background="@drawable/cremationandburial_image"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="Difference between a burial and cremation"
                     android:textColor="@color/black"
-                    android:layout_marginTop="220dp"
+                    android:layout_marginTop="230dp"
                     android:fontFamily="@font/abel"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="25sp"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
                     android:textAlignment="center"/>
             </androidx.cardview.widget.CardView>
 
@@ -272,22 +271,24 @@
                 android:layout_width="370dp"
                 android:layout_height="300dp"
                 android:layout_marginTop="20dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                >
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="170dp"
                     android:background="@drawable/moneypolicy_image"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="What your funeral policy covers and what a funeral actually costs"
                     android:textColor="@color/black"
-                    android:layout_marginTop="220dp"
+                    android:layout_marginTop="230dp"
                     android:fontFamily="@font/abel"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
                     android:textAlignment="center"/>
             </androidx.cardview.widget.CardView>
 
@@ -295,22 +296,24 @@
                 android:layout_width="370dp"
                 android:layout_height="300dp"
                 android:layout_marginTop="20dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                >
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="170dp"
                     android:background="@drawable/memorialandfuneral_image"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="Differences between a funeral and a memorial service"
                     android:textColor="@color/black"
-                    android:layout_marginTop="220dp"
+                    android:layout_marginTop="230dp"
                     android:fontFamily="@font/abel"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
                     android:textAlignment="center"/>
             </androidx.cardview.widget.CardView>
 
@@ -318,22 +321,24 @@
                 android:layout_width="370dp"
                 android:layout_height="300dp"
                 android:layout_marginTop="20dp"
-                android:layout_gravity="center">
+                android:layout_gravity="center"
+                app:cardCornerRadius="15dp"
+                >
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="200dp"
+                    android:layout_height="170dp"
                     android:background="@drawable/eulogy_image"/>
 
                 <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
                     android:text="How to write &amp; deliver the eulogy at a funeral "
                     android:textColor="@color/black"
-                    android:layout_marginTop="220dp"
+                    android:layout_marginTop="230dp"
                     android:fontFamily="@font/abel"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
                     android:textAlignment="center"/>
             </androidx.cardview.widget.CardView>
 
@@ -341,9 +346,5 @@
         </LinearLayout>
 
     </ScrollView>
-
-
-
-
 
 </FrameLayout>
