@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import com.google.firebase.auth.FirebaseAuth
 
 class SplashScreenActivity : AppCompatActivity() {
 
@@ -33,6 +34,14 @@ class SplashScreenActivity : AppCompatActivity() {
         splash_btn_Reg.setOnClickListener {
             var gotoSignUp = Intent(this, SignUpActivity::class.java)
             startActivity(gotoSignUp)
+        }
+    }
+
+    override fun onStart() {
+        super.onStart()
+        if(FirebaseAuth.getInstance().currentUser != null){
+            val i  = Intent(this,MainActivity::class.java)
+            startActivity(i)
         }
     }
 }

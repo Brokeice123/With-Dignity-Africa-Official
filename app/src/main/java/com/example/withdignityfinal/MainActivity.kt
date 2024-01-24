@@ -22,27 +22,27 @@ class MainActivity : AppCompatActivity() {
         bottomNavigationView.setOnItemSelectedListener(){ menuItem ->
             when(menuItem.itemId){
                 R.id.home_bottomnav -> {
-                    setBottomNavigationItemTextColor(R.color.white)
+                    setBottomNavigationItemTextColor(R.color.pink)
                     replaceFragment(HomeFragment())
                     true
                 }
                 R.id.package_bottomnav -> {
-                    setBottomNavigationItemTextColor(R.color.white)
+                    setBottomNavigationItemTextColor(R.color.pink)
                     replaceFragment(FuneralPackageFragment())
                     true
                 }
                 R.id.findfuneral_bottomnav -> {
-                    setBottomNavigationItemTextColor(R.color.white)
+                    setBottomNavigationItemTextColor(R.color.pink)
                     replaceFragment(FindFuneralFragment())
                     true
                 }
                 R.id.help_bottomnav -> {
-                    setBottomNavigationItemTextColor(R.color.white)
+                    setBottomNavigationItemTextColor(R.color.pink)
                     replaceFragment(HelpFragment())
                     true
                 }
                 R.id.checkout_bottomnav -> {
-                    setBottomNavigationItemTextColor(R.color.white)
+                    setBottomNavigationItemTextColor(R.color.pink)
                     replaceFragment(CheckoutFragment())
                     true
                 }
@@ -61,7 +61,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setBottomNavigationItemTextColor(colorResId: Int) {
         val color = ContextCompat.getColor(this, colorResId)
-        val uncheckedColor = Color.WHITE
+        val uncheckedColor = Color.BLACK
 
         val colorStateList = ColorStateList(
             arrayOf(

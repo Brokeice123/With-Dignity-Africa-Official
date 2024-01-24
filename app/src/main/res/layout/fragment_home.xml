@@ -44,8 +44,8 @@
 
             <!-- Your CardViews go here -->
             <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="270dp"
+                android:layout_width="170dp"
+                android:layout_height="240dp"
                 app:cardCornerRadius="5dp"
                 android:id="@+id/panic_cardview"
                 android:layout_margin="5dp"
@@ -55,7 +55,9 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="130dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
                     android:background="@drawable/panic"
                     android:layout_gravity="top"/>
                 <TextView
@@ -66,38 +68,45 @@
                     android:fontFamily="serif"
                     android:textStyle="bold"
                     android:textAlignment="center"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="135dp"
-                    android:textSize="16sp"/>
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="125dp"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="180dp"
                     android:fontFamily="@font/roboto"
                     android:text="You dont know what to do and need us to call you immediately "
                     android:textColor="@color/black"
-                    android:textSize="16sp" />
+                    android:layout_marginTop="170dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    tools:ignore="HardcodedText"
+                    android:textSize="14sp" />
 
 
             </androidx.cardview.widget.CardView>
 
             <!-- Your CardViews go here -->
             <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="270dp"
+                android:layout_width="170dp"
+                android:layout_height="240dp"
                 app:cardCornerRadius="6dp"
                 android:layout_margin="5dp"
                 android:id="@+id/packages_cardview"
                 android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
                 android:background="@color/white">
 
                 <!-- Add your image, text, or other content here -->
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="130dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
                     android:background="@drawable/funeral_packages"
                     android:layout_gravity="top"/>
                 <TextView
@@ -108,25 +117,29 @@
                     android:fontFamily="serif"
                     android:textStyle="bold"
                     android:textAlignment="center"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="135dp"
-                    android:textSize="16sp"/>
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="125dp"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="All inclusive funeral packages: Platinum, Gold or silver for your... "
                     android:textColor="@color/black"
-                    android:layout_marginTop="180dp"
                     android:fontFamily="@font/roboto"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="16sp"/>
+                    android:layout_marginTop="155dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    tools:ignore="HardcodedText"
+                    android:textSize="14sp"/>
 
             </androidx.cardview.widget.CardView>
 
             <!-- Your CardViews go here -->
             <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="270dp"
+                android:layout_width="170dp"
+                android:layout_height="240dp"
                 app:cardCornerRadius="6dp"
                 android:layout_margin="5dp"
                 android:id="@+id/service_cardview"
@@ -137,7 +150,9 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="130dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
                     android:background="@drawable/funeral_services"
                     android:layout_gravity="top"/>
                 <TextView
@@ -148,26 +163,29 @@
                     android:fontFamily="serif"
                     android:textStyle="bold"
                     android:textAlignment="center"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="135dp"
-                    android:textSize="16sp"/>
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="125dp"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="Select a service: Pickups,coffins, flowers, book a church... "
                     android:textColor="@color/black"
-                    android:layout_marginTop="180dp"
                     android:fontFamily="@font/roboto"
-                    android:layout_marginLeft="5dp"
-
-                    android:textSize="16sp"/>
+                    android:layout_marginTop="155dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    tools:ignore="HardcodedText"
+                    android:textSize="14sp"/>
 
             </androidx.cardview.widget.CardView>
 
             <!-- Your CardViews go here -->
             <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="270dp"
+                android:layout_width="170dp"
+                android:layout_height="240dp"
                 app:cardCornerRadius="6dp"
                 android:layout_margin="5dp"
                 android:id="@+id/will_cardview"
@@ -178,7 +196,9 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="131dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
                     android:layout_gravity="top"
                     android:background="@drawable/will" />
                 <TextView
@@ -189,25 +209,29 @@
                     android:fontFamily="serif"
                     android:textStyle="bold"
                     android:textAlignment="center"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="135dp"
-                    android:textSize="16sp"/>
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="125dp"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="Get your will done in 7 Minutes or less"
                     android:textColor="@color/black"
-                    android:layout_marginTop="180dp"
                     android:fontFamily="@font/roboto"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="16sp"/>
+                    android:layout_marginTop="155dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    tools:ignore="HardcodedText"
+                    android:textSize="14sp"/>
 
             </androidx.cardview.widget.CardView>
 
             <!-- Your CardViews go here -->
             <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="270dp"
+                android:layout_width="170dp"
+                android:layout_height="240dp"
                 app:cardCornerRadius="6dp"
                 android:layout_margin="5dp"
                 android:id="@+id/checklist_cardview"
@@ -218,7 +242,9 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="130dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
                     android:background="@drawable/checklist"
                     android:layout_gravity="top"/>
                 <TextView
@@ -229,25 +255,29 @@
                     android:fontFamily="serif"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="135dp"
-                    android:textSize="16sp"/>
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="125dp"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="All the tasks you need to perform for the funeral "
                     android:textColor="@color/black"
-                    android:layout_marginTop="180dp"
                     android:fontFamily="@font/roboto"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="16sp"/>
+                    android:layout_marginTop="170dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    tools:ignore="HardcodedText"
+                    android:textSize="14sp"/>
 
             </androidx.cardview.widget.CardView>
 
             <!-- Your CardViews go here -->
             <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="270dp"
+                android:layout_width="170dp"
+                android:layout_height="240dp"
                 app:cardCornerRadius="6dp"
                 android:layout_margin="5dp"
                 android:id="@+id/policy_cardview"
@@ -258,7 +288,9 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="130dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
                     android:background="@drawable/funeral_policies"
                     android:layout_gravity="top"/>
                 <TextView
@@ -269,25 +301,29 @@
                     android:fontFamily="serif"
                     android:textStyle="bold"
                     android:textAlignment="center"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="135dp"
-                    android:textSize="16sp"/>
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="125dp"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="Comprehensive coverage in the event of death "
                     android:textColor="@color/black"
-                    android:layout_marginTop="180dp"
                     android:fontFamily="@font/roboto"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="16sp"/>
+                    android:layout_marginTop="155dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    tools:ignore="HardcodedText"
+                    android:textSize="14sp"/>
 
             </androidx.cardview.widget.CardView>
 
             <!-- Your CardViews go here -->
             <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="270dp"
+                android:layout_width="170dp"
+                android:layout_height="240dp"
                 app:cardCornerRadius="6dp"
                 android:layout_margin="5dp"
                 android:id="@+id/avbob_cardview"
@@ -298,7 +334,9 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="130dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
                     android:background="@drawable/avbob"
                     android:layout_gravity="top"/>
                 <TextView
@@ -309,25 +347,29 @@
                     android:fontFamily="serif"
                     android:textStyle="bold"
                     android:textAlignment="center"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="135dp"
-                    android:textSize="16sp"/>
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="125dp"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="Find services for AVBOB clients "
                     android:textColor="@color/black"
-                    android:layout_marginTop="180dp"
                     android:fontFamily="@font/roboto"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="17sp"/>
+                    android:layout_marginTop="170dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    tools:ignore="HardcodedText"
+                    android:textSize="14sp"/>
 
             </androidx.cardview.widget.CardView>
 
             <!-- Your CardViews go here -->
             <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="270dp"
+                android:layout_width="170dp"
+                android:layout_height="240dp"
                 app:cardCornerRadius="6dp"
                 android:layout_margin="5dp"
                 android:id="@+id/preplan_cardview"
@@ -338,7 +380,9 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="130dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
                     android:background="@drawable/preplan"
                     android:layout_gravity="top"/>
                 <TextView
@@ -349,25 +393,29 @@
                     android:fontFamily="serif"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="135dp"
-                    android:textSize="16sp"/>
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="125dp"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="Pre-plan and pre-order all the tasks you need to perform for the... "
                     android:textColor="@color/black"
-                    android:layout_marginTop="180dp"
                     android:fontFamily="@font/roboto"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="16sp"/>
+                    android:layout_marginTop="170dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    tools:ignore="HardcodedText"
+                    android:textSize="14sp"/>
 
             </androidx.cardview.widget.CardView>
 
             <!-- Your CardViews go here -->
             <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="270dp"
+                android:layout_width="170dp"
+                android:layout_height="240dp"
                 app:cardCornerRadius="6dp"
                 android:layout_margin="5dp"
                 android:id="@+id/help_cardview"
@@ -378,7 +426,9 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="130dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
                     android:background="@drawable/help_faq"
                     android:layout_gravity="top"/>
                 <TextView
@@ -389,25 +439,29 @@
                     android:fontFamily="serif"
                     android:textStyle="bold"
                     android:textAlignment="center"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="135dp"
-                    android:textSize="17sp"/>
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="125dp"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="Find Help and frequently asked questions "
                     android:textColor="@color/black"
-                    android:layout_marginTop="180dp"
                     android:fontFamily="@font/roboto"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="16sp"/>
+                    android:layout_marginTop="155dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    tools:ignore="HardcodedText"
+                    android:textSize="14sp"/>
 
             </androidx.cardview.widget.CardView>
 
             <!-- Your CardViews go here -->
             <androidx.cardview.widget.CardView
-                android:layout_width="180dp"
-                android:layout_height="270dp"
+                android:layout_width="170dp"
+                android:layout_height="240dp"
                 app:cardCornerRadius="6dp"
                 android:layout_margin="5dp"
                 android:id="@+id/advice_cardview"
@@ -418,7 +472,9 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="130dp"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
                     android:background="@drawable/advice"
                     android:layout_gravity="top"/>
                 <TextView
@@ -429,18 +485,22 @@
                     android:fontFamily="serif"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:layout_marginLeft="5dp"
-                    android:layout_marginTop="135dp"
-                    android:textSize="17sp"/>
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginTop="125dp"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:text="Read and search for advice and articles "
                     android:textColor="@color/black"
-                    android:layout_marginTop="180dp"
                     android:fontFamily="@font/roboto"
-                    android:layout_marginLeft="5dp"
-                    android:textSize="16sp"/>
+                    android:layout_marginTop="155dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    tools:ignore="HardcodedText"
+                    android:textSize="14sp"/>
 
             </androidx.cardview.widget.CardView>
 
