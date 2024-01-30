@@ -1,5 +1,6 @@
 package com.example.withdignityfinal
 
+import android.app.ProgressDialog
 import android.content.Intent
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
@@ -23,7 +24,8 @@ class SignInActivity : AppCompatActivity() {
     private lateinit var log_edt_password: EditText
     private lateinit var log_btn_log: Button
 
-
+    private lateinit var loadingBarEmailPassword: ProgressDialog
+    private lateinit var loadingBarGoogleSignIn: ProgressDialog
     private lateinit var client: GoogleSignInClient
     private lateinit var btnGoogleSignIn:ImageView
     private lateinit var auth: FirebaseAuth
@@ -37,6 +39,9 @@ class SignInActivity : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
+
+        loadingBarEmailPassword = ProgressDialog(this)
+        loadingBarGoogleSignIn = ProgressDialog(this)
 
         btnGoogleSignIn = findViewById(R.id.googleSignInButton)
         val  options = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
@@ -55,14 +60,23 @@ class SignInActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         log_btn_log.setOnClickListener {
+            // Show loading bar
+            showLoadingBarEmailPassword()
+
             var email = log_edt_email.text.toString().trim()
             var password = log_edt_password.text.toString().trim()
 
             //Validate Input
             if (email.isEmpty() || password.isEmpty()) {
+                // Hide loading bar
+                hideLoadingBarEmailPassword()
+
                 Toast.makeText(this, "One of the inputs is empty", Toast.LENGTH_SHORT).show()
             } else{
                 auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this) {
+                    // Hide loading bar
+                    hideLoadingBarEmailPassword()
+
                     if (it.isSuccessful){
                         Toast.makeText(this, "Login Successful", Toast.LENGTH_SHORT).show()
                         var gotomain = Intent(this, MainActivity::class.java)
@@ -78,23 +92,51 @@ class SignInActivity : AppCompatActivity() {
 
         // Set click listener for Google Sign In button
         btnGoogleSignIn.setOnClickListener {
+            // Show loading bar for Google Sign-In
+            showLoadingBarGoogleSignIn()
+
             val intent = client.signInIntent
             startActivityForResult(intent,10001)
         }
 
     }
 
+    private fun showLoadingBarEmailPassword() {
+        loadingBarEmailPassword.setMessage("Signing in...")
+        loadingBarEmailPassword.setCancelable(false)
+        loadingBarEmailPassword.show()
+    }
+
+    private fun hideLoadingBarEmailPassword() {
+        loadingBarEmailPassword.dismiss()
+    }
+
+    private fun showLoadingBarGoogleSignIn() {
+        loadingBarGoogleSignIn.setMessage("Signing in with Google...")
+        loadingBarGoogleSignIn.setCancelable(false)
+        loadingBarGoogleSignIn.show()
+    }
+
+    private fun hideLoadingBarGoogleSignIn() {
+        loadingBarGoogleSignIn.dismiss()
+    }
+
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
         if(requestCode==10001){
+            showLoadingBarGoogleSignIn()
+
             val task = GoogleSignIn.getSignedInAccountFromIntent(data)
             val account = task.getResult(ApiException::class.java)
             val credential = GoogleAuthProvider.getCredential(account.idToken,null)
             FirebaseAuth.getInstance().signInWithCredential(credential)
                 .addOnCompleteListener{task->
+                    // Hide loading bar for Google Sign-In
+                    hideLoadingBarGoogleSignIn()
+
                     if(task.isSuccessful){
 
-                        val i  = Intent(this,OptionsPageActivity::class.java)
+                        val i  = Intent(this,HomeFragment::class.java)
                         startActivity(i)
 
                     }else{
