@@ -28,7 +28,7 @@ class HomeFragment : Fragment() {
         val paniccardView = view.findViewById<CardView>(R.id.panic_cardview)
         paniccardView.setOnClickListener {
             // Handle click event here
-            val fragment = PanicFragment()
+            val fragment = com.example.withdignityfinal.PanicFragment()
             val transaction = requireActivity().supportFragmentManager.beginTransaction()
             transaction.replace(R.id.frame_container, fragment)
             transaction.addToBackStack(null)
@@ -38,7 +38,7 @@ class HomeFragment : Fragment() {
         val packagescardView = view.findViewById<CardView>(R.id.packages_cardview)
         packagescardView.setOnClickListener {
             // Handle click event here
-            val fragment = FuneralPackageFragment()
+            val fragment = com.example.withdignityfinal.FuneralPackageFragment()
             val transaction = requireActivity().supportFragmentManager.beginTransaction()
             transaction.replace(R.id.frame_container, fragment)
             transaction.addToBackStack(null)
@@ -48,7 +48,7 @@ class HomeFragment : Fragment() {
         val servicescardView = view.findViewById<CardView>(R.id.service_cardview)
         servicescardView.setOnClickListener {
             // Handle click event here
-            val fragment = FindFuneralFragment()
+            val fragment = com.example.withdignityfinal.FindFuneralFragment()
             val transaction = requireActivity().supportFragmentManager.beginTransaction()
             transaction.replace(R.id.frame_container, fragment)
             transaction.addToBackStack(null)
@@ -58,7 +58,7 @@ class HomeFragment : Fragment() {
         val willcardView = view.findViewById<CardView>(R.id.will_cardview)
         willcardView.setOnClickListener {
             // Handle click event here
-            val fragment = WillFragment()
+            val fragment = com.example.withdignityfinal.WillFragment()
             val transaction = requireActivity().supportFragmentManager.beginTransaction()
             transaction.replace(R.id.frame_container, fragment)
             transaction.addToBackStack(null)
@@ -68,7 +68,7 @@ class HomeFragment : Fragment() {
         val checklistcardView = view.findViewById<CardView>(R.id.checklist_cardview)
         checklistcardView.setOnClickListener {
             // Handle click event here
-            val fragment = ChecklistFragment()
+            val fragment = com.example.withdignityfinal.ChecklistFragment()
             val transaction = requireActivity().supportFragmentManager.beginTransaction()
             transaction.replace(R.id.frame_container, fragment)
             transaction.addToBackStack(null)
@@ -78,7 +78,7 @@ class HomeFragment : Fragment() {
         val policycardView = view.findViewById<CardView>(R.id.policy_cardview)
         policycardView.setOnClickListener {
             // Handle click event here
-            val fragment = PolicyFragment()
+            val fragment = com.example.withdignityfinal.PolicyFragment()
             val transaction = requireActivity().supportFragmentManager.beginTransaction()
             transaction.replace(R.id.frame_container, fragment)
             transaction.addToBackStack(null)
@@ -88,7 +88,7 @@ class HomeFragment : Fragment() {
         val preplancardView = view.findViewById<CardView>(R.id.preplan_cardview)
         preplancardView.setOnClickListener {
             // Handle click event here
-            val fragment = PreplanFragment()
+            val fragment = com.example.withdignityfinal.PreplanFragment()
             val transaction = requireActivity().supportFragmentManager.beginTransaction()
             transaction.replace(R.id.frame_container, fragment)
             transaction.addToBackStack(null)
@@ -98,7 +98,7 @@ class HomeFragment : Fragment() {
         val helpcardView = view.findViewById<CardView>(R.id.help_cardview)
         helpcardView.setOnClickListener {
             // Handle click event here
-            val fragment = HelpFragment()
+            val fragment = com.example.withdignityfinal.HelpFragment()
             val transaction = requireActivity().supportFragmentManager.beginTransaction()
             transaction.replace(R.id.frame_container, fragment)
             transaction.addToBackStack(null)
@@ -108,7 +108,7 @@ class HomeFragment : Fragment() {
         val advicecardView = view.findViewById<CardView>(R.id.advice_cardview)
         advicecardView.setOnClickListener {
             // Handle click event here
-            val fragment = AdviceFragment()
+            val fragment = com.example.withdignityfinal.AdviceFragment()
             val transaction = requireActivity().supportFragmentManager.beginTransaction()
             transaction.replace(R.id.frame_container, fragment)
             transaction.addToBackStack(null)
@@ -125,7 +125,7 @@ class HomeFragment : Fragment() {
             scrollView.setOnContextClickListener(){Item ->
                 when(Item.id){
                     R.id.panic_cardview -> {
-                        replaceFragment(PanicFragment())
+                        replaceFragment(com.example.withdignityfinal.PanicFragment())
                         true
                     }
                     else -> false

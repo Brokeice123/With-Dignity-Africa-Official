@@ -5,10 +5,244 @@
     android:layout_height="match_parent"
     tools:context=".FindFuneralFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/hometoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#ffff">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:text="Find Funeral Service"
+                android:textAlignment="center"
+                android:textColor="#CB7987"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_marginTop="60dp">
+
+
+        <Button
+            android:id="@+id/pickupofthedeceased"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_background"
+            android:text="Pickup of the Deceased"
+            android:fontFamily="@font/average"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/coffinsandcaskets"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/average"
+            android:background="@drawable/button_background"
+            android:text="Coffins &amp; Caskets"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/cremation"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/average"
+            android:text="Cremation "
+            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/Churchbookings"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/average"
+            android:background="@drawable/button_background"
+            android:text="Church/Hall Bookings"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/catering"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/average"
+            android:text="Catering"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/groceries"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/average"
+            android:background="@drawable/button_background"
+            android:text="Groceries"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/flowers"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/average"
+            android:background="@drawable/button_background"
+            android:text="Flowers"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/transport"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/average"
+            android:background="@drawable/button_background"
+            android:text="Transport"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/unveilings"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/average"
+            android:background="@drawable/button_background"
+            android:text="Tombstones/Unveilings"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/memorialparks"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/average"
+            android:text=" PVT Memorial Parks"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/repatriations"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/average"
+            android:text="Repatriations"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/photoandvideo"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/average"
+            android:background="@drawable/button_background"
+            android:text="Photo/ Video"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/homecleaning"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/average"
+            android:background="@drawable/button_background"
+            android:text="Home Cleaning"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/mentalhealth"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/average"
+            android:background="@drawable/button_background"
+            android:text="Mental Health"
+            tools:ignore="HardcodedText" />
+
+
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:fontFamily="@font/average"
+            android:background="@drawable/button_background"
+            android:text="Living Memorials"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/deceasedestates"
+            android:layout_width="170dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/average"
+            android:text="Deceased Estates/ Probate"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/obituaries"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/average"
+            android:text="Obituaries"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+    </LinearLayout>
+    </HorizontalScrollView>
+
+    <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="FIND FUNERAL FRAGMENT" />
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:scrollbars="vertical">
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </FrameLayout>

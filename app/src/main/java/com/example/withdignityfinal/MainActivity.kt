@@ -23,27 +23,27 @@ class MainActivity : AppCompatActivity() {
             when(menuItem.itemId){
                 R.id.home_bottomnav -> {
                     setBottomNavigationItemTextColor(R.color.pink)
-                    replaceFragment(HomeFragment())
+                    replaceFragment(com.example.withdignityfinal.HomeFragment())
                     true
                 }
                 R.id.package_bottomnav -> {
                     setBottomNavigationItemTextColor(R.color.pink)
-                    replaceFragment(FuneralPackageFragment())
+                    replaceFragment(com.example.withdignityfinal.FuneralPackageFragment())
                     true
                 }
                 R.id.findfuneral_bottomnav -> {
                     setBottomNavigationItemTextColor(R.color.pink)
-                    replaceFragment(FindFuneralFragment())
+                    replaceFragment(com.example.withdignityfinal.FindFuneralFragment())
                     true
                 }
                 R.id.help_bottomnav -> {
                     setBottomNavigationItemTextColor(R.color.pink)
-                    replaceFragment(HelpFragment())
+                    replaceFragment(com.example.withdignityfinal.HelpFragment())
                     true
                 }
                 R.id.checkout_bottomnav -> {
                     setBottomNavigationItemTextColor(R.color.pink)
-                    replaceFragment(CheckoutFragment())
+                    replaceFragment(com.example.withdignityfinal.CheckoutFragment())
                     true
                 }
                 else -> false
@@ -51,7 +51,7 @@ class MainActivity : AppCompatActivity() {
 
         }
 
-        replaceFragment(HomeFragment())
+        replaceFragment(com.example.withdignityfinal.HomeFragment())
 
     }
 

@@ -8,7 +8,7 @@
     android:id="@+id/drawer_layout"
     tools:context=".OptionsPageActivity">
 
-    <Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:layout_width="match_parent"
         android:id="@+id/hometoolbar"
         android:layout_height="55dp"
@@ -26,9 +26,9 @@
             android:textAlignment="center"
             tools:ignore="HardcodedText" />
 
-    </Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
-    <SearchView
+    <androidx.appcompat.widget.SearchView
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:id="@+id/searchbar_home"
