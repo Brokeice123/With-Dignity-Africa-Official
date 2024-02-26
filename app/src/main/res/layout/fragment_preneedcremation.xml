@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".preneedfragments.preneedburial">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/hometoolbar"
+            android:layout_height="55dp"
+            android:background="#ffff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:text="Pre-need Cremation package"
+                android:textColor="#CB7987"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:columnCount="1"
+            android:rowCount="4">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/griefing_man"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/abel"
+                android:text="Simple Sendoff: Pre-need burial package"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/abel"
+                android:text="Description"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/abel"
+                android:text="Our simple pre-need cremation package is for those that want to have the cremation conducted with a minimum of fuss and ceremony. This is an 'unattended/ direct cremation' and so there is no actual 'service' with your remains present.
+                Your remains are collected at the place of death and transported to our mortuary facility for preservation until the cremation."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/abel"
+                android:text="This includes pickup of the deceased, a simple coffin, registration of death &amp; related paperwork.
+You mandate Dignity Africa to act as your burial agent and deal with all administration, paperwork and signoffs."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/abel"
+                android:text="Price"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abel"
+                android:text="R 14.924.00"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/noto_sans"
+                android:text="ORDER NOW"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/deposit"
+                android:layout_width="350dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/noto_sans"
+                android:text="BOOK WITH DEPOSIT"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

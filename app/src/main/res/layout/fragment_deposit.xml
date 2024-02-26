@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".preneedfragments.preneedburial">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/hometoolbar"
+            android:layout_height="wrap_content"
+            android:background="#ffff">
+
+
+            <TextView
+                android:id="@+id/marquee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:ellipsize="marquee"
+                android:scrollHorizontally="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="Pay a Deposit for a Funeral Package"
+                android:textColor="#CB7987"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:columnCount="1"
+            android:rowCount="4">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/griefing_man"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/abel"
+                android:text="Pay a Deposit for a Funeral Package"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/abel"
+                android:text="Description"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/abel"
+                android:text="Book a funeral package instead of paying the entire amount now. Allow yourself an extra 3 days to arrange the funds for the funeral. This includes the pickup of the deceased and transportation to our mortuary facilities."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/abel"
+                android:text="Call or Text for more info/queries"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abel"
+                android:text="+254721963134"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/abel"
+                android:text="Price"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/abel"
+                android:text="R 7,500.00"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <Button
+                android:layout_width="350dp"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_background"
+                android:fontFamily="@font/noto_sans"
+                android:text="ORDER NOW"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

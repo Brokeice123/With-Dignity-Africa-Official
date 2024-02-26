@@ -1,14 +1,13 @@
 package com.example.withdignityfinal
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import androidx.fragment.app.Fragment
-import androidx.fragment.app.replace
-import com.google.android.material.bottomnavigation.BottomNavigationItemView
-import com.google.android.material.bottomnavigation.BottomNavigationView
 import android.content.res.ColorStateList
 import android.graphics.Color
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
+import androidx.fragment.app.Fragment
+import com.google.android.material.bottomnavigation.BottomNavigationView
+
 
 class MainActivity : AppCompatActivity() {
 

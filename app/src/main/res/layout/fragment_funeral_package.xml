@@ -3,12 +3,423 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FuneralPackageFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PreplanFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="FUNERAL PACKAGE FRAGMENT" />
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/hometoolbar"
+            android:layout_height="55dp"
+            android:background="#ffff">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="serif"
+                android:text="Funeral Package"
+                android:textAlignment="center"
+                android:textColor="#CB7987"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,TextSizeCheck" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:columnCount="1"
+            android:rowCount="4">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:id="@+id/isithunzipackage"
+                app:cardCornerRadius="15dp"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="@drawable/griefing_man"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:fontFamily="@font/abel"
+                    android:text="Isithunzi Paclage"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/pink"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="180dp"
+                    android:text="The best dignified, comprehensive funeral, at most affordable price in Kenya. This
+package includes a selection of coffins(flat lid, PC, Open Face), A Hearse,..."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:padding="5dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="270dp"
+                    android:layout_marginStart="250dp"
+                    android:fontFamily="@font/abel"
+                    android:text="KSH 12,500.00"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/pink"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="370dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:id="@+id/attendedcremationpackage"
+                app:cardCornerRadius="15dp"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="@drawable/griefing_man"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:fontFamily="@font/abel"
+                    android:text="Attended Cremation"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/pink"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="180dp"
+                    android:text="An attended/direct Cremation is one where there is small service of approximately 15 minutes conducted with the body present of the cremation..."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:padding="5dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="270dp"
+                    android:layout_marginStart="250dp"
+                    android:fontFamily="@font/abel"
+                    android:text="KSH 12,500.00"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/pink"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/bronzefuneralpackage"
+                android:layout_width="370dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="@drawable/griefing_man"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:fontFamily="@font/abel"
+                    android:text="Bronze Funeral Package"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/pink"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="180dp"
+                    android:text="The bronze funeral package for your loved one. This package includes a selection of coffins, hearse, body collection, preparation, washing &amp; beautification..."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:padding="5dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="270dp"
+                    android:layout_marginStart="250dp"
+                    android:fontFamily="@font/abel"
+                    android:text="KSH 12,500.00"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/pink"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/fullservicecremationpackage"
+                android:layout_width="370dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="@drawable/griefing_man"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:fontFamily="@font/abel"
+                    android:text="Full Service Cremation Package"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/pink"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="180dp"
+                    android:text="A full service cremation is similar to a traditional burial with the exception that the funeral will end at the crematorium as opposed to the cemetery..."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:padding="5dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="270dp"
+                    android:layout_marginStart="250dp"
+                    android:fontFamily="@font/abel"
+                    android:text="KSH 12,500.00"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/pink"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/silverfuneralpackage"
+                android:layout_width="370dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="@drawable/griefing_man"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:fontFamily="@font/abel"
+                    android:text="Silver Funeral Packeage"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/pink"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="180dp"
+                    android:text="The silver comprehensive funeral package for your loved one. This package includes a selection of caskets, hearse, body collection, preparation, washing &amp; beautification..."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:padding="5dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="270dp"
+                    android:layout_marginStart="250dp"
+                    android:fontFamily="@font/abel"
+                    android:text="KSH 12,500.00"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/pink"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/goldfuneralpackage"
+                android:layout_width="370dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp"
+                tools:ignore="TextSizeCheck">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="@drawable/griefing_man"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:fontFamily="@font/abel"
+                    android:text="Gold Funeral Package"
+                    android:textAlignment="center"
+                    android:textColor="@color/pink"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="180dp"
+                    android:padding="5dp"
+                    android:text="The gold comprehensive funeral package for your loved one. This package include a selection of caskets, hearse, body collection, preparation, washing &amp; beautification..."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="250dp"
+                    android:layout_marginTop="270dp"
+                    android:fontFamily="@font/abel"
+                    android:text="KSH 12,500.00"
+                    android:textColor="@color/pink"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/platinumfuneralpackage"
+                android:layout_width="370dp"
+                android:layout_height="330dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="15dp"
+                >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:background="@drawable/griefing_man"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="150dp"
+                    android:fontFamily="@font/abel"
+                    android:text="Platinum Funeral Package"
+                    android:textAlignment="center"
+                    android:textStyle="bold"
+                    android:textColor="@color/pink"
+                    android:textSize="20sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="180dp"
+                    android:text="The platinum Comprehensive funeral package for your loved one. This package includes a selection of premium caskets, hearse, body collection, preparation, washing &amp; beautification..."
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="17sp"
+                    android:padding="5dp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="295dp"
+                    android:layout_marginStart="250dp"
+                    android:fontFamily="@font/abel"
+                    android:text="KSH 12,500.00"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentEnd="true"
+                    android:textColor="@color/pink"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
 
 </FrameLayout>
