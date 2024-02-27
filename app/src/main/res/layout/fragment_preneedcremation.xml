@@ -22,7 +22,7 @@
                 android:fontFamily="cursive"
                 android:text="Pre-need Cremation package"
                 android:textColor="#CB7987"
-                android:textSize="35sp"
+                android:textSize="30sp"
                 android:textStyle="bold"
                 android:textAlignment="center"
                 tools:ignore="HardcodedText" />
