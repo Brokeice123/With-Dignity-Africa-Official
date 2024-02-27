@@ -79,8 +79,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/lato"
-                android:text="Our simple pre-need cremation package is for those that want to have the cremation conducted with a minimum of fuss and ceremony. This is an 'unattended/ direct cremation' and so there is no actual 'service' with your remains present.
-                Your remains are collected at the place of death and transported to our mortuary facility for preservation until the cremation."
+                android:text="Our simple pre-need cremation package is for those that want to have the cremation conducted with a minimum of fuss and ceremony. This is an 'unattended/ direct cremation' and so there is no actual 'service' with your remains present. Your remains are collected at the place of death and transported to our mortuary facility for preservation until the cremation."
                 android:layout_marginStart="10dp"
                 android:textColor="@color/black"
                 android:textSize="15sp"
@@ -145,7 +144,7 @@ You mandate Dignity Africa to act as your burial agent and deal with all adminis
                 android:background="@drawable/button_background"
                 android:fontFamily="@font/lato"
                 android:text="BOOK WITH DEPOSIT"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 tools:ignore="HardcodedText" />
 
 
