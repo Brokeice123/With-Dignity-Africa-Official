@@ -19,10 +19,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="serif"
+                android:fontFamily="cursive"
                 android:text="Pre-need burial package"
                 android:textColor="#CB7987"
-                android:textSize="25sp"
+                android:textSize="35sp"
                 android:textStyle="bold"
                 android:textAlignment="center"
                 tools:ignore="HardcodedText" />
@@ -46,15 +46,28 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:background="@drawable/griefing_man"/>
+                android:background="@drawable/preneed_burial"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/abel"
+                android:fontFamily="@font/alegreya_sc_bold"
                 android:text="Simple Sendoff: Pre-need burial package"
                 android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Description"
+                android:layout_marginStart="10dp"
                 android:textStyle="bold"
                 android:textColor="@color/pink"
                 android:textSize="20sp"
@@ -65,25 +78,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/abel"
-                android:text="Description"
-                android:layout_marginStart="10dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                tools:ignore="HardcodedText"
-                />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/abel"
+                android:fontFamily="@font/lato"
                 android:text="Our simple pre-need burial package is for those that want to have the burial conducted with a minimum of fuss and ceremony 'unattended/ direct burial'
 and so there is no actual 'service' with your remains present. Your remains are collected at the place of death and transported to our mortuary facility for preservation until the burial."
                 android:layout_marginStart="10dp"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 tools:ignore="HardcodedText"
                 />
 
@@ -91,12 +91,12 @@ and so there is no actual 'service' with your remains present. Your remains are 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/abel"
+                android:fontFamily="@font/lato"
                 android:text="This includes pickup of the deceased, a simple coffin, registration of death &amp; related paperwork.
 You mandate Dignity Africa to act as your burial agent and deal with all administration, paperwork and signoffs."
                 android:layout_marginStart="10dp"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 tools:ignore="HardcodedText"
                 />
 
@@ -104,11 +104,11 @@ You mandate Dignity Africa to act as your burial agent and deal with all adminis
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/abel"
+                android:fontFamily="@font/alegreya_sc_bold"
                 android:text="Price"
                 android:layout_marginStart="10dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/pink"
                 android:textSize="20sp"
                 tools:ignore="HardcodedText"
                 />
@@ -116,11 +116,11 @@ You mandate Dignity Africa to act as your burial agent and deal with all adminis
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/abel"
+                android:fontFamily="@font/lato"
                 android:text="R 14,924.00"
                 android:layout_marginStart="10dp"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 tools:ignore="HardcodedText"
                 />
 
@@ -130,9 +130,9 @@ You mandate Dignity Africa to act as your burial agent and deal with all adminis
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/button_background"
-                android:fontFamily="@font/noto_sans"
+                android:fontFamily="@font/lato"
                 android:text="ORDER NOW"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 tools:ignore="HardcodedText" />
 
             <Button
@@ -143,7 +143,7 @@ You mandate Dignity Africa to act as your burial agent and deal with all adminis
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/button_background"
-                android:fontFamily="@font/noto_sans"
+                android:fontFamily="@font/lato"
                 android:text="BOOK WITH DEPOSIT"
                 android:textSize="20sp"
                 tools:ignore="HardcodedText" />
