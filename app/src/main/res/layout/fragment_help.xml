@@ -21,10 +21,10 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="serif"
+                android:fontFamily="cursive"
                 android:text="Help/FAQ"
                 android:textColor="#CB7987"
-                android:textSize="25sp"
+                android:textSize="30sp"
                 android:textStyle="bold"
                 android:textAlignment="center"
                 tools:ignore="HardcodedText" />
@@ -43,13 +43,14 @@
 
         <HorizontalScrollView
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="600dp"
             android:layout_marginTop="60dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="620dp"
+                android:layout_height="550dp"
                 android:columnCount="1"
+                android:layout_marginTop="20dp"
                 android:orientation="horizontal"
                 android:rowCount="4">
 
@@ -73,10 +74,10 @@
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="180dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/alegreya_sc_bold"
                         android:text="How do I use this app"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
+                        android:textColor="@color/pink"
                         android:textSize="25sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
@@ -91,14 +92,14 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="15dp"
                             android:layout_marginEnd="15dp"
-                            android:fontFamily="@font/abel"
+                            android:fontFamily="@font/lato"
                             android:text="Dignity Africa app is designed with user first principles making it very easy to use. The app is divided into categories
     such as funeral packages, funeral services and funeral policies. Within each category, we list a number of products from different suppliers. We list product information, details and pricing
     so you can select any product you want to purchase, fill in your card details and place an order. We then contact you immediately with the details of your order and talk you through the process
     including any documentation that we need from you. We take care of all the details so you can focus on family, not admin."
                             android:textColor="@color/black"
-                            android:textSize="20sp"
-                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:padding="4dp"
                             tools:ignore="HardcodedText" />
 
                     </androidx.core.widget.NestedScrollView>
@@ -108,7 +109,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="370dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginStart="15dp"
                     app:cardCornerRadius="10dp"
                     android:background="#F8F8F8"
@@ -125,11 +126,11 @@
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="180dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/alegreya_sc_bold"
                         android:text="Why is this better than using a traditional funeral parlour?"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
+                        android:textColor="@color/pink"
+                        android:textSize="30sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
@@ -143,15 +144,15 @@
                             android:layout_height="match_parent"
                             android:layout_marginStart="15dp"
                             android:layout_marginEnd="15dp"
-                            android:fontFamily="@font/abel"
+                            android:fontFamily="@font/lato"
                             android:text="Dignity Africa is 'a better way to do a funeral' anything...the service, insurance, financing, etc.  We're easier; you can choose from pre-built
     packages or make your own.   We're better value; we have sourced the best value funeral service providers to list in Dignity. What you see is what you pay, no additional costs, no surprises just
     good value and a better experience than anywhere else.  We're faster; You can arrange an entire funeral in less than anywhere else.  We're safer; there is no need to visit multiple funeral homes, you can do
     everything you need in the app.  We're focused on user satisfaction: we manage all the task that comes from your purchase. You don't need to run after the funeral director for confirmations, the caterer for scones or the florist to confirm details and deliveries.
      We manage everything on your behalf and keep you informed all the way. We are completely changing the way people approach death care by digitizing funeral &amp; related services."
                             android:textColor="@color/black"
-                            android:textSize="20sp"
-                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:padding="4dp"
                             tools:ignore="HardcodedText"
                             />
 
@@ -163,7 +164,7 @@
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="370dp"
-                    android:layout_height="wrap_content"
+                    android:layout_height="match_parent"
                     android:layout_marginStart="15dp"
                     app:cardCornerRadius="10dp"
                     android:background="#F8F8F8"
@@ -180,11 +181,11 @@
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="180dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/alegreya_sc_bold"
                         android:text="How do I know the services provided are reliable?"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
+                        android:textColor="@color/pink"
+                        android:textSize="30sp"
                         android:textStyle="bold" />
 
                     <androidx.core.widget.NestedScrollView
@@ -197,13 +198,13 @@
                             android:layout_height="match_parent"
                             android:layout_marginStart="15dp"
                             android:layout_marginEnd="15dp"
-                            android:fontFamily="@font/abel"
+                            android:fontFamily="@font/lato"
                             android:text="We vet all our services providers to make sure they adhere to the highest standards of compliance, hygiene and quality. We make sure our caterers have the proper food
     preparation certificates and even that our transportation service partner drivers have professional driving permits. Where necessary, all products are SABS or SANS certified and we manage all the tasks that come from your purchase.
      You don't need to run after the funeral director for confirmations, the caterer for scones or the florist to confirm details and deliveries. We manage everything on your behalf and keep you informed all the way."
                             android:textColor="@color/black"
-                            android:textSize="20sp"
-                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:padding="4dp"
                             tools:ignore="HardcodedText" />
                     </androidx.core.widget.NestedScrollView>
 
@@ -229,11 +230,11 @@
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="180dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/alegreya_sc_bold"
                         android:text="Do you own funeral parlours?"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
+                        android:textColor="@color/pink"
+                        android:textSize="30sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
@@ -243,12 +244,12 @@
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="230dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/lato"
                         android:text="No, we contact with aggregate formal, registered funeral parlours (and other service providers), that have the proper health department certificates
 and premises and who subscribe to our partner code of ethics.  The same way that Uber contact with the driver, Dignity contracts with our service partners."
                         android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:padding="4dp"
                         tools:ignore="HardcodedText" />
                 </androidx.cardview.widget.CardView>
 
@@ -271,11 +272,11 @@ and premises and who subscribe to our partner code of ethics.  The same way that
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="180dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/alegreya_sc_bold"
                         android:text="Can I prebook a funeral?"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
+                        android:textColor="@color/pink"
+                        android:textSize="30sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
@@ -285,12 +286,12 @@ and premises and who subscribe to our partner code of ethics.  The same way that
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="230dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/lato"
                         android:text="Yes, as a world first, Dignity Africa enables you to pre plan your entire funeral. From the details around where and what your wishes are, to documenting all the logistic
 around your transition to the hereafter or next plane of existence.  Everything is logged in our database can be activated by your family members with just one call."
                         android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:padding="4dp"
                         tools:ignore="HardcodedText" />
 
                 </androidx.cardview.widget.CardView>
@@ -314,11 +315,11 @@ around your transition to the hereafter or next plane of existence.  Everything 
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="180dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/alegreya_sc_bold"
                         android:text="Isn't this more expensive?"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
+                        android:textColor="@color/pink"
+                        android:textSize="30sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -327,12 +328,12 @@ around your transition to the hereafter or next plane of existence.  Everything 
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="230dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/lato"
                         android:text="No, we have sourced the market to find the best value and best services that you can get. Using Dignity Africa is significantly cheaper than going into the market and attempting to find cheaper
 , reliable providers without having the full background of the market. You can always find a product that is cheaper, you will find one that is cheaper and reliable."
                         android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:padding="4dp"
                         tools:ignore="HardcodedText" />
 
                 </androidx.cardview.widget.CardView>
@@ -356,11 +357,11 @@ around your transition to the hereafter or next plane of existence.  Everything 
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="180dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/alegreya_sc_bold"
                         android:text="How do payments work?"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
+                        android:textColor="@color/pink"
+                        android:textSize="30sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
@@ -370,11 +371,11 @@ around your transition to the hereafter or next plane of existence.  Everything 
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="230dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/lato"
                         android:text="We accept debit cards, credit cards and EFT deposits. With debit and credit cards, you can pay in app using M-pesa, the world's best, most trusted online payment provider.  For EFT's you can call us and we'll provide the relevant details for an electronic transfer."
                         android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:padding="4dp"
                         tools:ignore="HardcodedText" />
                 </androidx.cardview.widget.CardView>
 
@@ -397,11 +398,11 @@ around your transition to the hereafter or next plane of existence.  Everything 
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="180dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/alegreya_sc_bold"
                         android:text="Do you accept cash on delivery?"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
+                        android:textColor="@color/pink"
+                        android:textSize="30sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
@@ -411,11 +412,11 @@ around your transition to the hereafter or next plane of existence.  Everything 
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="230dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/lato"
                         android:text="No, we only accept debit cards and EFT deposits. We will soon be accepting Lay by payments for our pre planned packages."
                         android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:padding="4dp"
                         tools:ignore="HardcodedText" />
                 </androidx.cardview.widget.CardView>
 
@@ -438,11 +439,11 @@ around your transition to the hereafter or next plane of existence.  Everything 
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="180dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/alegreya_sc_bold"
                         android:text="How do I check on progress of the service?"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
+                        android:textColor="@color/pink"
+                        android:textSize="30sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
@@ -452,12 +453,12 @@ around your transition to the hereafter or next plane of existence.  Everything 
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="230dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/lato"
                         android:text="Every one of our customer get a personal Dignity Africa advisor. Your advisor acts as a project manager for the service and checks up on all details, logistics and communicates with you on a pre determined and agreed schedule.
  You are also welcome to call your advisor with questions or input anytime "
                         android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:padding="4dp"
                         tools:ignore="HardcodedText" />
                 </androidx.cardview.widget.CardView>
 
@@ -480,11 +481,11 @@ around your transition to the hereafter or next plane of existence.  Everything 
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="180dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/alegreya_sc_bold"
                         android:text="What happens after I pay?"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
+                        android:textColor="@color/pink"
+                        android:textSize="30sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
@@ -498,13 +499,13 @@ around your transition to the hereafter or next plane of existence.  Everything 
                             android:layout_height="match_parent"
                             android:layout_marginStart="15dp"
                             android:layout_marginEnd="15dp"
-                            android:fontFamily="@font/abel"
+                            android:fontFamily="@font/lato"
                             android:text="Let's take an example; for instance when you order the pickup of someone who has recently passed on, this is what happens: We begin the process of collecting your loved one
  We immediately call you though the whole process. You will ge dedicated advisor who is sensitive to your loss and can answer all your questions. Your Dignity Africa advisor will also handle all the documentation and procedure that is necessary at this time. We will dispatch an ambulence to collect the deceased person's remains, issue the appropriate documentation, prepare fo the issuance of the death certificate and store the body for 7 days
  If you want to reach out and ask anything that's on your mind, we're only one click away. You can reach us on WhatsApp, text or phone details above any of our products."
                             android:textColor="@color/black"
-                            android:textSize="20sp"
-                            android:textAlignment="center"
+                            android:textSize="16sp"
+                            android:padding="4dp"
                             tools:ignore="HardcodedText" />
                     </androidx.core.widget.NestedScrollView>
 
@@ -530,11 +531,11 @@ around your transition to the hereafter or next plane of existence.  Everything 
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="180dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/alegreya_sc_bold"
                         android:text="Is Dignity Africa available in my location?"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
+                        android:textColor="@color/pink"
+                        android:textSize="30sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
@@ -544,11 +545,11 @@ around your transition to the hereafter or next plane of existence.  Everything 
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="230dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/lato"
                         android:text="We are available for all services in Nairobi and Nationally for funeral packages only.     We are incresing our footprint to ensure we can soon service all requirements nationally."
                         android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:padding="4dp"
                         tools:ignore="HardcodedText" />
                 </androidx.cardview.widget.CardView>
 
@@ -571,11 +572,11 @@ around your transition to the hereafter or next plane of existence.  Everything 
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="180dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/alegreya_sc_bold"
                         android:text="Why is Dignity Africa a better way to do a funeral?"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
+                        android:textColor="@color/pink"
+                        android:textSize="30sp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText" />
 
@@ -585,13 +586,13 @@ around your transition to the hereafter or next plane of existence.  Everything 
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="230dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/lato"
                         android:text="We do everything for you and offer a fully concierged service while you focus on family. Instead of worrying about whether you're doing the right things, getting
 value for money or even chasing up different service providers, you have one person who manages everything for you.  We exist to make sure you are satisfied and manage every part of the services that are provided to you. We provide information when you need it, a fully managed service,
 ultimate convenience, safety and social distancing by dealing with all service providers, we are absolutely a better way to do a funeral."
                         android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:padding="4dp"
                         tools:ignore="HardcodedText" />
                 </androidx.cardview.widget.CardView>
 
@@ -614,11 +615,11 @@ ultimate convenience, safety and social distancing by dealing with all service p
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="180dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/alegreya_sc_bold"
                         android:text="How to add quantity and remove items in checkout?"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
-                        android:textSize="20sp"
+                        android:textColor="@color/pink"
+                        android:textSize="30sp"
                         android:textStyle="bold" />
 
                     <TextView
@@ -627,12 +628,12 @@ ultimate convenience, safety and social distancing by dealing with all service p
                         android:layout_marginStart="15dp"
                         android:layout_marginEnd="15dp"
                         android:layout_marginTop="230dp"
-                        android:fontFamily="@font/abel"
+                        android:fontFamily="@font/lato"
                         android:text="If you are choosing specific services instead of packages, you can select the 'add to cart' button and the item you want is added to your cart.
 You can then continue selecting services and products that you want. When you're ready, you can click on the checkout icon at the bottom of the screen and you will be taken to the checkout screen."
                         android:textColor="@color/black"
-                        android:textSize="20sp"
-                        android:textAlignment="center"
+                        android:textSize="16sp"
+                        android:padding="4dp"
                         tools:ignore="HardcodedText" />
                 </androidx.cardview.widget.CardView>
 
