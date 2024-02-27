@@ -20,11 +20,11 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="serif"
+                android:fontFamily="cursive"
                 android:text="Funeral Package"
                 android:textAlignment="center"
                 android:textColor="#CB7987"
-                android:textSize="25sp"
+                android:textSize="35sp"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText,TextSizeCheck" />
 
@@ -55,32 +55,35 @@
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="140dp"
-                    android:background="@drawable/griefing_man"
+                    android:layout_height="160dp"
+                    android:background="@drawable/funeral_tent"
                     tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="150dp"
-                    android:fontFamily="@font/abel"
-                    android:text="Isithunzi Paclage"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:layout_marginTop="170dp"
+                    android:text="ISITHUNZI PACKAGE"
+                    android:textColor="@color/pink"
                     android:textAlignment="center"
                     android:textStyle="bold"
-                    android:textColor="@color/pink"
-                    android:textSize="20sp"
+                    android:textSize="16sp"
                     tools:ignore="HardcodedText" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="180dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/lato"
+                    android:padding="6dp"
                     android:text="The best dignified, comprehensive funeral, at most affordable price in Kenya. This
 package includes a selection of coffins(flat lid, PC, Open Face), A Hearse,..."
-                    android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="17sp"
-                    android:padding="5dp"
+                    android:textSize="14sp"
                     tools:ignore="HardcodedText" />
 
                 <TextView
@@ -109,31 +112,34 @@ package includes a selection of coffins(flat lid, PC, Open Face), A Hearse,..."
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="140dp"
-                    android:background="@drawable/griefing_man"
+                    android:layout_height="160dp"
+                    android:background="@drawable/attended_cremation"
                     tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="150dp"
-                    android:fontFamily="@font/abel"
-                    android:text="Attended Cremation"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="ATTENDED CREMATION"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     android:textColor="@color/pink"
-                    android:textSize="20sp"
+                    android:textSize="16sp"
                     tools:ignore="HardcodedText" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="180dp"
+                    android:layout_marginTop="195dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:fontFamily="@font/lato"
                     android:text="An attended/direct Cremation is one where there is small service of approximately 15 minutes conducted with the body present of the cremation..."
-                    android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="17sp"
-                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:padding="6dp"
                     tools:ignore="HardcodedText" />
 
                 <TextView
@@ -162,31 +168,34 @@ package includes a selection of coffins(flat lid, PC, Open Face), A Hearse,..."
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="140dp"
-                    android:background="@drawable/griefing_man"
+                    android:layout_height="160dp"
+                    android:background="@drawable/bronze_package"
                     tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="150dp"
-                    android:fontFamily="@font/abel"
-                    android:text="Bronze Funeral Package"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="BRONZE FUNERAL PACKAGE"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     android:textColor="@color/pink"
-                    android:textSize="20sp"
+                    android:textSize="16sp"
                     tools:ignore="HardcodedText" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="180dp"
+                    android:layout_marginTop="195dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
                     android:text="The bronze funeral package for your loved one. This package includes a selection of coffins, hearse, body collection, preparation, washing &amp; beautification..."
-                    android:textAlignment="center"
+                    android:fontFamily="@font/lato"
                     android:textColor="@color/black"
-                    android:textSize="17sp"
-                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:padding="6dp"
                     tools:ignore="HardcodedText" />
 
                 <TextView
@@ -215,31 +224,34 @@ package includes a selection of coffins(flat lid, PC, Open Face), A Hearse,..."
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="140dp"
-                    android:background="@drawable/griefing_man"
+                    android:layout_height="160dp"
+                    android:background="@drawable/cremation_vase"
                     tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="150dp"
-                    android:fontFamily="@font/abel"
-                    android:text="Full Service Cremation Package"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="FULL SERVICE CREMATION PACKAGE"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     android:textColor="@color/pink"
-                    android:textSize="20sp"
+                    android:textSize="16sp"
                     tools:ignore="HardcodedText" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="180dp"
+                    android:layout_marginTop="195dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
                     android:text="A full service cremation is similar to a traditional burial with the exception that the funeral will end at the crematorium as opposed to the cemetery..."
-                    android:textAlignment="center"
+                    android:fontFamily="@font/lato"
                     android:textColor="@color/black"
-                    android:textSize="17sp"
-                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:padding="6dp"
                     tools:ignore="HardcodedText" />
 
                 <TextView
@@ -268,31 +280,34 @@ package includes a selection of coffins(flat lid, PC, Open Face), A Hearse,..."
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="140dp"
-                    android:background="@drawable/griefing_man"
+                    android:layout_height="160dp"
+                    android:background="@drawable/silver_package"
                     tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="150dp"
-                    android:fontFamily="@font/abel"
-                    android:text="Silver Funeral Packeage"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="SILVER FUNERAL PACKAGE"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     android:textColor="@color/pink"
-                    android:textSize="20sp"
+                    android:textSize="16sp"
                     tools:ignore="HardcodedText" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="180dp"
+                    android:layout_marginTop="195dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
                     android:text="The silver comprehensive funeral package for your loved one. This package includes a selection of caskets, hearse, body collection, preparation, washing &amp; beautification..."
-                    android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:textSize="17sp"
-                    android:padding="5dp"
+                    android:fontFamily="@font/lato"
+                    android:textSize="14sp"
+                    android:padding="6dp"
                     tools:ignore="HardcodedText" />
 
                 <TextView
@@ -321,31 +336,34 @@ package includes a selection of coffins(flat lid, PC, Open Face), A Hearse,..."
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="140dp"
-                    android:background="@drawable/griefing_man"
+                    android:layout_height="160dp"
+                    android:background="@drawable/gold_package"
                     tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="150dp"
-                    android:fontFamily="@font/abel"
-                    android:text="Gold Funeral Package"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="GOLD FUNERAL PACKAGE"
                     android:textAlignment="center"
                     android:textColor="@color/pink"
-                    android:textSize="20sp"
+                    android:textSize="16sp"
                     android:textStyle="bold"
                     tools:ignore="HardcodedText" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="180dp"
-                    android:padding="5dp"
+                    android:layout_marginTop="195dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:padding="6dp"
                     android:text="The gold comprehensive funeral package for your loved one. This package include a selection of caskets, hearse, body collection, preparation, washing &amp; beautification..."
-                    android:textAlignment="center"
+                    android:fontFamily="@font/lato"
                     android:textColor="@color/black"
-                    android:textSize="17sp"
+                    android:textSize="14sp"
                     tools:ignore="HardcodedText" />
 
                 <TextView
@@ -374,31 +392,34 @@ package includes a selection of coffins(flat lid, PC, Open Face), A Hearse,..."
 
                 <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="140dp"
-                    android:background="@drawable/griefing_man"
+                    android:layout_height="160dp"
+                    android:background="@drawable/platinum_package"
                     tools:ignore="ContentDescription" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="150dp"
-                    android:fontFamily="@font/abel"
-                    android:text="Platinum Funeral Package"
+                    android:layout_marginTop="170dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="PLATINUM FUNERAL PACKAGE"
                     android:textAlignment="center"
                     android:textStyle="bold"
                     android:textColor="@color/pink"
-                    android:textSize="20sp"
+                    android:textSize="16sp"
                     tools:ignore="HardcodedText" />
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="180dp"
+                    android:layout_marginTop="195dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginEnd="15dp"
                     android:text="The platinum Comprehensive funeral package for your loved one. This package includes a selection of premium caskets, hearse, body collection, preparation, washing &amp; beautification..."
-                    android:textAlignment="center"
+                    android:fontFamily="@font/lato"
                     android:textColor="@color/black"
-                    android:textSize="17sp"
-                    android:padding="5dp"
+                    android:textSize="14sp"
+                    android:padding="6dp"
                     tools:ignore="HardcodedText" />
 
                 <TextView

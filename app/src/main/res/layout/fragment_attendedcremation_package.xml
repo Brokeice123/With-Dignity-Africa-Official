@@ -21,7 +21,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="serif"
+                android:fontFamily="cursive"
                 android:text="Attended Cremation"
                 android:textColor="#CB7987"
                 android:textSize="25sp"
@@ -48,15 +48,28 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:background="@drawable/griefing_man"/>
+                android:background="@drawable/attended_cremation"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/abel"
+                android:fontFamily="@font/alegreya_sc_bold"
                 android:text="Attended Cremation"
                 android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Description"
+                android:layout_marginStart="10dp"
                 android:textStyle="bold"
                 android:textColor="@color/pink"
                 android:textSize="20sp"
@@ -67,25 +80,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/abel"
-                android:text="Description"
-                android:layout_marginStart="10dp"
-                android:textStyle="bold"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                tools:ignore="HardcodedText"
-                />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:fontFamily="@font/abel"
+                android:fontFamily="@font/lato"
                 android:text="An attended/direct cremation is one where there is a small service approximately 15 minutes conducted with the body present at the crematorium
 . The deceased is collected at the place of death and transported to our mortuary facility for preservation until the service and cremation. This includes pickup of the deceased, a simple Urn, Registration of Death &amp; related paperwork."
                 android:layout_marginStart="10dp"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 tools:ignore="HardcodedText"
                 />
 
@@ -94,11 +94,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="15dp"
-                android:fontFamily="@font/abel"
+                android:fontFamily="@font/alegreya_sc_bold"
                 android:text="Call or Text for more info/ queries"
                 android:layout_marginStart="10dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/pink"
                 android:textSize="20sp"
                 tools:ignore="HardcodedText"
                 />
@@ -106,11 +106,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/abel"
+                android:fontFamily="@font/lato"
                 android:text="+254 721963134 | +254 721963134"
                 android:layout_marginStart="10dp"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 tools:ignore="HardcodedText"
                 />
 
@@ -118,11 +118,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/abel"
+                android:fontFamily="@font/alegreya_sc_bold"
                 android:text="Price"
                 android:layout_marginStart="10dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/pink"
                 android:textSize="20sp"
                 tools:ignore="HardcodedText"
                 />
@@ -130,11 +130,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/abel"
+                android:fontFamily="@font/lato"
                 android:text="R 15,240.00"
                 android:layout_marginStart="10dp"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 tools:ignore="HardcodedText"
                 />
 
@@ -144,9 +144,9 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/button_background"
-                android:fontFamily="@font/noto_sans"
+                android:fontFamily="@font/lato"
                 android:text="ORDER NOW"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 tools:ignore="HardcodedText" />
 
             <Button
@@ -157,9 +157,9 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/button_background"
-                android:fontFamily="@font/noto_sans"
+                android:fontFamily="@font/lato"
                 android:text="BOOK WITH DEPOSIT"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 tools:ignore="HardcodedText" />
 
 
