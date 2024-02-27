@@ -85,8 +85,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/lato"
-                android:text="Our custom pre-need funeral package is for those that want to have a premium and dignified full service cremation without burdening their loved ones with the details of planning and
-                administration. Dignity Africa handles all the admin, planning and paperwork whilst ensuring a fitting ceremony for your loved ones to celebrate you."
+                android:text="Our custom pre-need funeral package is for those that want to have a premium and dignified full service cremation without burdening their loved ones with the details of planning and administration. Dignity Africa handles all the admin, planning and paperwork whilst ensuring a fitting ceremony for your loved ones to celebrate you."
                 android:layout_marginStart="10dp"
                 android:textColor="@color/black"
                 android:textSize="15sp"
@@ -113,7 +112,7 @@
                 android:text="You mandate Dignity Africa to act as your burial agent and deal with all administration, paperwork and signoffs."
                 android:layout_marginStart="10dp"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 tools:ignore="HardcodedText"
                 />
 
