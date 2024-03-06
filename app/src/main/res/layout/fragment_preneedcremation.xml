@@ -53,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/alegreya_sc_bold"
-                android:text="Simple Sendoff: Pre-need burial package"
+                android:text="Pre-need Cremation package"
                 android:textAlignment="center"
                 android:textStyle="bold"
                 android:textColor="@color/pink"
@@ -124,13 +124,14 @@ You mandate Dignity Africa to act as your burial agent and deal with all adminis
                 />
 
             <Button
+                android:id="@+id/addtocart"
                 android:layout_width="350dp"
                 android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/button_background"
                 android:fontFamily="@font/lato"
-                android:text="ORDER NOW"
+                android:text="ADD TO CART"
                 android:textSize="15sp"
                 tools:ignore="HardcodedText" />
 

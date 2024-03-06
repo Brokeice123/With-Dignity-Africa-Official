@@ -23,4 +23,6 @@ class Product{
         this.description = description
         this.price = price
     }
+
+
 }

@@ -78,6 +78,8 @@ dependencies {
     implementation ("com.google.firebase:firebase-firestore:21.7.1") // Use the latest version
     implementation ("com.google.firebase:firebase-core:16.0.1") // Include Firebase Core
     implementation ("com.firebaseui:firebase-ui-firestore:7.2.0") // Use the latest version
+    implementation ("com.github.flutterwave.rave-android:rave_android:2.1.39")
     annotationProcessor ("com.github.bumptech.glide:compiler:4.14.2")
     annotationProcessor ("com.github.bumptech.glide:compiler:4.14.2")
+
 }
