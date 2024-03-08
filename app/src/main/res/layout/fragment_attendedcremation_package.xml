@@ -144,6 +144,7 @@
                 android:layout_height="48dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
+                android:onClick="clicked"
                 android:background="@drawable/button_background"
                 android:fontFamily="@font/lato"
                 android:text="ADD TO CART"
