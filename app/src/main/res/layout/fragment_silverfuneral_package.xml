@@ -440,6 +440,7 @@ If you want to reach out and ask anything that's on your mind, we're only one cl
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
                 android:background="@drawable/button_background"
+                android:onClick="clicked"
                 android:fontFamily="@font/lato"
                 android:text="ADD TO CART"
                 android:textSize="15sp"
