@@ -441,6 +441,7 @@ If you want to reach out and ask anything that's on your mind, we're only one cl
                 android:layout_marginTop="10dp"
                 android:background="@drawable/button_background"
                 android:fontFamily="@font/lato"
+                android:onClick="clicked"
                 android:text="ADD TO CART"
                 android:textSize="15sp"
                 tools:ignore="HardcodedText" />
