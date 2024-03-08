@@ -21,7 +21,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:fontFamily="serif"
+                android:fontFamily="cursive"
                 android:ellipsize="marquee"
                 android:scrollHorizontally="true"
                 android:marqueeRepeatLimit="marquee_forever"
@@ -52,13 +52,13 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:background="@drawable/griefing_man"/>
+                android:background="@drawable/deposit"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/abel"
+                android:fontFamily="@font/alegreya_sc_bold"
                 android:text="Pay a Deposit for a Funeral Package"
                 android:textAlignment="center"
                 android:textStyle="bold"
@@ -71,11 +71,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/abel"
+                android:fontFamily="@font/alegreya_sc_bold"
                 android:text="Description"
                 android:layout_marginStart="10dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/pink"
                 android:textSize="20sp"
                 tools:ignore="HardcodedText"
                 />
@@ -84,11 +84,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/abel"
+                android:fontFamily="@font/lato"
                 android:text="Book a funeral package instead of paying the entire amount now. Allow yourself an extra 3 days to arrange the funds for the funeral. This includes the pickup of the deceased and transportation to our mortuary facilities."
                 android:layout_marginStart="10dp"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 tools:ignore="HardcodedText"
                 />
 
@@ -96,11 +96,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/abel"
+                android:fontFamily="@font/alegreya_sc_bold"
                 android:text="Call or Text for more info/queries"
                 android:layout_marginStart="10dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/pink"
                 android:textSize="20sp"
                 tools:ignore="HardcodedText"
                 />
@@ -108,11 +108,11 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/abel"
+                android:fontFamily="@font/lato"
                 android:text="+254721963134"
                 android:layout_marginStart="10dp"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 tools:ignore="HardcodedText"
                 />
 
@@ -120,11 +120,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:fontFamily="@font/abel"
+                android:fontFamily="@font/alegreya_sc_bold"
                 android:text="Price"
                 android:layout_marginStart="10dp"
                 android:textStyle="bold"
-                android:textColor="@color/black"
+                android:textColor="@color/pink"
                 android:textSize="20sp"
                 tools:ignore="HardcodedText"
                 />
@@ -136,7 +136,7 @@
                 android:text="R 7,500.00"
                 android:layout_marginStart="10dp"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 tools:ignore="HardcodedText"
                 />
 
@@ -147,9 +147,9 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="20dp"
                 android:background="@drawable/button_background"
-                android:fontFamily="@font/noto_sans"
+                android:fontFamily="@font/lato"
                 android:text="ORDER NOW"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 tools:ignore="HardcodedText" />
 
 
