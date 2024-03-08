@@ -145,6 +145,7 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/button_background"
                 android:fontFamily="@font/lato"
+                android:onClick="clicked"
                 android:text="ORDER NOW"
                 android:textSize="15sp"
                 tools:ignore="HardcodedText" />
