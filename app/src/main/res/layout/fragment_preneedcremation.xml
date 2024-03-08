@@ -132,6 +132,7 @@ You mandate Dignity Africa to act as your burial agent and deal with all adminis
                 android:background="@drawable/button_background"
                 android:fontFamily="@font/lato"
                 android:text="ADD TO CART"
+                android:onClick="clicked"
                 android:textSize="15sp"
                 tools:ignore="HardcodedText" />
 

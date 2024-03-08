@@ -2,6 +2,7 @@ package com.example.withdignityfinal.preneedfragments
 
 import android.annotation.SuppressLint
 import android.content.ContentValues
+import android.content.Context
 import android.graphics.drawable.AnimationDrawable
 import android.os.Bundle
 import android.os.Handler
@@ -11,8 +12,11 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.Button
 import androidx.cardview.widget.CardView
+import com.example.withdignityfinal.MyBounceInterpolator
 import com.example.withdignityfinal.R
 import com.example.withdignityfinal.data.PackageItem
 import com.google.android.material.snackbar.Snackbar
@@ -55,21 +59,15 @@ class preneedcremation : Fragment() {
         return view
     }
 
-    private fun createAddToCartAnimation(button: Button) {
-        // Set the button's background to the progress animation drawable
-        button.setBackgroundResource(R.drawable.progress_animation)
-        val drawable = button.background as AnimationDrawable
-        drawable.start()
+    private fun clicked(button: Button, context: Context) {
+        button.text = "clicked"
 
-        // After a delay, stop the animation and revert the button to its normal state
-        Handler(Looper.getMainLooper()).postDelayed({
-            drawable.stop()
-            button.setBackgroundResource(R.drawable.button_background)
-            button.text = "Added to Cart"
-        }, 1000) // Adjust the delay as needed
+        val myAnim: Animation = AnimationUtils.loadAnimation(context, R.anim.bounce)
+        val interpolator = MyBounceInterpolator(amplitude = 0.2, frequency = 20.0)
+        myAnim.interpolator = interpolator
+
+        button.startAnimation(myAnim)
     }
-
-
 
 
     private fun addToCart(product: PackageItem) {
@@ -94,7 +92,7 @@ class preneedcremation : Fragment() {
                                 // Animation and Snackbar logic here
                                 val viewToAnimate = view?.findViewById<Button>(R.id.addtocart)
                                 if (viewToAnimate != null) {
-                                    createAddToCartAnimation(viewToAnimate)
+                                    clicked(viewToAnimate, requireContext())
                                 }
                                 Snackbar.make(viewToAnimate!!, "Item added to cart", Snackbar.LENGTH_LONG).show()
                             }
@@ -112,7 +110,7 @@ class preneedcremation : Fragment() {
                                 // Animation and Snackbar logic here
                                 val viewToAnimate = view?.findViewById<Button>(R.id.addtocart)
                                 if (viewToAnimate != null) {
-                                    createAddToCartAnimation(viewToAnimate)
+                                    clicked(viewToAnimate, requireContext())
                                 }
                                 Snackbar.make(viewToAnimate!!, "Existing Item added to cart", Snackbar.LENGTH_LONG).show()
                             }
