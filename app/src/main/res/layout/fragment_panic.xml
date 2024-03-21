@@ -3,12 +3,89 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
     tools:context=".PanicFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:id="@+id/panixtoolbar"
+        android:layout_height="55dp"
+        android:background="#ffff">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:text="Contact Page"
+            android:textColor="#CB7987"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            tools:ignore="HardcodedText" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_marginTop="50dp">
+
+        <ImageView
+            android:id="@+id/panicimageview"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/panic"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/alegreya_sc_bold"
+            android:text="Incase of Emergency Do not hesitate to Contact us."
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_below="@+id/panicimageview"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText"
+            />
+
+        <Button
+            android:id="@+id/emailButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Send Email"
+            android:layout_below="@+id/panicimageview"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/button_background"
+            tools:ignore="HardcodedText,DuplicateClickableBoundsCheck" />
+
+        <Button
+            android:id="@+id/callButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/emailButton"
+            android:background="@drawable/button_background"
+            android:text="Call Us"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/chatButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_below="@id/callButton"
+            android:background="@drawable/button_background"
+            android:text="Chat with Support"
+            tools:ignore="HardcodedText" />
+
+    </RelativeLayout>
+
 
 </FrameLayout>

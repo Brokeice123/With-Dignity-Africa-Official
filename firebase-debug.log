@@ -1,0 +1,28 @@
+[debug] [2024-03-20T14:01:39.154Z] ----------------------------------------------------------------------
+[debug] [2024-03-20T14:01:39.175Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\PC\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init functions
+[debug] [2024-03-20T14:01:39.175Z] CLI Version:   13.5.2
+[debug] [2024-03-20T14:01:39.176Z] Platform:      win32
+[debug] [2024-03-20T14:01:39.176Z] Node Version:  v20.11.0
+[debug] [2024-03-20T14:01:39.177Z] Time:          Wed Mar 20 2024 17:01:39 GMT+0300 (East Africa Time)
+[debug] [2024-03-20T14:01:39.177Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-03-20T14:01:39.198Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-03-20T14:01:39.199Z] > authorizing via signed-in user (mariaolotira@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\PC\AndroidStudioProjects\With-Dignity-Africa-Official
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
