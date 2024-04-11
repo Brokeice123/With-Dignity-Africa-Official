@@ -16,11 +16,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
-            android:layout_margin="5dp"
-            android:fontFamily="cursive"
+            android:layout_margin="5dip"
             android:text="Checkout Page"
-            android:textColor="@color/pink"
-            android:textSize="30sp"
+            android:textColor="#000000"
+            android:textSize="24sp"
             tools:ignore="HardcodedText" />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -39,20 +38,17 @@
                 android:id="@+id/totalPriceTextView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:fontFamily="@font/lato"
+                android:textColor="#000000"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
             <Button
                 android:id="@+id/ButtonConfirmCheckout"
-                android:layout_width="200dp"
+                android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:fontFamily="@font/lato"
                 android:background="@drawable/button_background"
                 android:layout_gravity="center"
                 android:layout_margin="5dip"
-                android:textSize="15sp"
                 android:text="Confirm Checkout"
                 tools:ignore="HardcodedText"/>
         </LinearLayout>
