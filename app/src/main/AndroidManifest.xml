@@ -2,14 +2,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+    <uses-permission
+        android:name="android.permission.READ_EXTERNAL_STORAGE"
         android:maxSdkVersion="32" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <queries>
+
         <!-- Query for email apps -->
         <intent>
             <action android:name="android.intent.action.SENDTO" />
+
             <data android:scheme="mailto" />
         </intent>
         <!-- Query for dialer apps -->
@@ -19,22 +22,34 @@
         <!-- Query for WhatsApp -->
         <intent>
             <action android:name="android.intent.action.VIEW" />
-            <data android:scheme="https" android:host="api.whatsapp.com" />
+
+            <data
+                android:host="api.whatsapp.com"
+                android:scheme="https" />
         </intent>
     </queries>
 
     <application
         android:allowBackup="true"
-        android:enableOnBackInvokedCallback="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
+        android:enableOnBackInvokedCallback="true"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="With Dignity Africa"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        tools:targetApi="tiramisu"
-        tools:replace="android:label">
+        tools:replace="android:label"
+        tools:targetApi="tiramisu">
+        <activity
+            android:name=".WelcomeActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".MainActivity"
             android:exported="false" />
@@ -49,13 +64,8 @@
             android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
 
         <meta-data
             android:name="preloaded_fonts"
