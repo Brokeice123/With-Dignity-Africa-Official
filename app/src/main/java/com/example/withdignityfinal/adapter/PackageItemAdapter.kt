@@ -6,6 +6,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.withdignityfinal.R
 import com.example.withdignityfinal.data.PackageItem
 
@@ -24,13 +25,19 @@ class PackageItemAdapter(private val packageItems: MutableList<PackageItem>) : R
 
     override fun onBindViewHolder(holder: PackageItemViewHolder, position: Int) {
         if (packageItems.size > 1) {
+            val packageItem = packageItems[position]
             holder.nameTextView.text = packageItems[position].name
             holder.priceTextView.text = packageItems[position].price.toString()
-            holder.imageView.setImageResource(packageItems[position].image)
+            Glide.with(holder.itemView.context)
+                .load(packageItem.image) // Assuming packageItem.image is a URL or file path
+                .into(holder.imageView)
         } else {
+            val packageItem = packageItems[position]
             holder.nameTextView.text = packageItems[0].name
             holder.priceTextView.text = packageItems[0].price.toString()
-            holder.imageView.setImageResource(packageItems[0].image)
+            Glide.with(holder.itemView.context)
+                .load(packageItem.image) // Assuming packageItem.image is a URL or file path
+                .into(holder.imageView)
         }
     }
 

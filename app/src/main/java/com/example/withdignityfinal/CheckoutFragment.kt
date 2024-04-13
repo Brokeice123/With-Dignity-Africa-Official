@@ -18,11 +18,8 @@ import com.example.withdignityfinal.adapter.CartAdapter
 import com.example.withdignityfinal.data.CartProduct
 import com.example.withdignityfinal.data.PackageItem
 import com.flutterwave.raveandroid.RavePayActivity
-import com.flutterwave.raveandroid.RavePayInitializer
 import com.flutterwave.raveandroid.RaveUiManager
-import com.flutterwave.raveandroid.rave_java_commons.Meta
 import com.flutterwave.raveandroid.rave_java_commons.RaveConstants
-import com.flutterwave.raveandroid.rave_java_commons.SubAccount
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
 
@@ -62,16 +59,15 @@ class CheckoutFragment : Fragment(), CartAdapter.OnTotalPriceUpdatedListener {
                     cartItems.clear()
                     for (document in task.result) {
                         val packageItem = PackageItem(
-                            id = document.getString("id")?:"",
-                            document.getString("product.name") ?: "",
-                            R.drawable.checkout_image, // Placeholder for default image
-                            document.getDouble("product.price") ?: 0.0
+                            id = document.getString("product.id") ?: "",
+                            name = document.getString("product.name") ?: "",
+                            image = document.getString("image") ?: "",
+                            price = document.getDouble("product.price") ?: 0.0,
+                            imageType = document.getString("imageType") ?: ""
                         )
                         val quantity = document.getLong("quantity")?.toInt() ?: 0
-                        // Retrieve image as a Long and cast it to Int
-                        val image = document.getLong("image")?.toInt() ?: R.drawable.carticon
                         val id = document.id
-                        cartItems.add(CartProduct(packageItem, image, quantity, id))
+                        cartItems.add(CartProduct(packageItem, image = packageItem.image, quantity = quantity, id = id))
                     }
                     adapter.notifyDataSetChanged()
                     displayTotalPrice()
@@ -113,6 +109,7 @@ class CheckoutFragment : Fragment(), CartAdapter.OnTotalPriceUpdatedListener {
             .setCountry("KE")
             .setEmail(email)
             .setfName(name)
+            .setPhoneNumber(phoneNumber)
             .setNarration("Payment for products")
             .setPublicKey("FLWPUBK_TEST-dd026b84a21b9cd2d7f44fc7786035b1-X")
             .setEncryptionKey("FLWSECK_TESTdabb62a23a4f")
