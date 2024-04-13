@@ -21,6 +21,7 @@ import com.google.firebase.firestore.ktx.firestore
 import com.google.firebase.ktx.Firebase
 import android.content.Context
 import android.widget.ImageView
+import androidx.fragment.app.FragmentActivity
 import com.bumptech.glide.Glide
 import com.bumptech.glide.request.RequestOptions
 
@@ -59,6 +60,25 @@ class FindFuneralFragment : Fragment() {
 
             override fun onBindViewHolder(holder: ProductViewHolder, position: Int, model: Product) {
                 holder.bind(model)
+                holder.itemView.setOnClickListener {
+                    Log.d("ProductAdapter", "Product clicked: ${model.name}")
+                    // Create an instance of the ProductDetail fragment
+                    val productDetailFragment = ProductDetail().apply {
+                        arguments = Bundle().apply {
+                            putParcelable("product", model)
+                        }
+                    }
+                    // Get the FragmentManager
+                    val fragmentManager = (it.context as FragmentActivity).supportFragmentManager
+                    Log.d("ProductAdapter", "Attempting to navigate to ProductDetail")
+                    // Begin the transaction to replace the current fragment with the ProductDetail fragment
+                    fragmentManager.beginTransaction()
+                        .replace(R.id.frame_container, productDetailFragment)
+                        .addToBackStack(null) // Optional: Adds the transaction to the back stack
+                        .commit()
+                    Log.d("ProductAdapter", "Navigation to ProductDetail attempted")
+
+                }
             }
         }
 

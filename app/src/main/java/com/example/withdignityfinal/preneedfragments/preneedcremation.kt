@@ -40,7 +40,8 @@ class preneedcremation : Fragment() {
         userId = FirebaseAuth.getInstance().currentUser?.uid ?: ""
 
         // Example product data
-        val product = PackageItem("preneedcremation","Pre-need Cremation Package", R.drawable.preneed_cremation,14924.00)
+        val product = PackageItem("preneedcremation","Pre-need Cremation Package",
+            R.drawable.preneed_cremation.toString(),14924.00,imageType = "resourceId")
 
         val addToCartButton: Button = view.findViewById(R.id.addtocart)
         addToCartButton.setOnClickListener {
@@ -75,7 +76,8 @@ class preneedcremation : Fragment() {
         val cartItem = hashMapOf(
             "product" to hashMapOf("id" to product.id, "name" to product.name,"price" to product.price),
             "quantity" to 1,
-            "image" to product.image
+            "image" to product.image,
+            "imageType" to if (product.image.startsWith("http")) "url" else "resourceId"
         )
 
         // Query Firestore for the item by product ID

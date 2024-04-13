@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import com.example.withdignityfinal.R
 import com.example.withdignityfinal.data.CartProduct
 import com.flutterwave.raveandroid.RavePayActivity
@@ -35,10 +36,21 @@ class CartAdapter(private val cartItems: MutableList<CartProduct>) : RecyclerVie
         val cartItem = cartItems[position]
         holder.name.text = cartItem.packageItem.name
         holder.price.text = cartItem.packageItem.price.toString()
-        holder.image.setImageResource(cartItems[position].image)
         holder.quantity.text = cartItem.quantity.toString()
 
-        // Set up the remove button click listener
+        if (cartItem.packageItem.imageType == "url") {
+            Glide.with(holder.itemView.context)
+                .load(cartItem.packageItem.image)
+                .into(holder.image)
+        } else if (cartItem.packageItem.imageType == "resourceId") {
+            val imageResourceId = holder.itemView.context.resources.getIdentifier(cartItem.packageItem.image, "drawable", holder.itemView.context.packageName)
+            holder.image.setImageResource(imageResourceId ?: R.drawable.checkout_image)
+        } else {
+            Glide.with(holder.itemView.context)
+                .load(cartItem.packageItem.image)
+                .into(holder.image)
+        }
+
         holder.itemView.findViewById<Button>(R.id.ButtonRemoveItem).setOnClickListener {
             removeItem(position)
         }

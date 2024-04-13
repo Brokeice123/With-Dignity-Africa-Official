@@ -5,79 +5,71 @@
     android:id="@+id/reccard"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_marginStart="15dp"
-    android:layout_marginTop="10dp"
-    android:layout_marginEnd="15dp"
-    app:cardBackgroundColor="@color/cardview_shadow_end_color"
-    app:cardCornerRadius="20dp"
-    app:cardElevation="0dp"
-    app:cardUseCompatPadding="true">
+    android:layout_margin="15dp"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="5dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="@drawable/edt_background">
+<androidx.constraintlayout.widget.ConstraintLayout
+android:layout_width="match_parent"
+android:layout_height="150dp">
 
-        <ImageView
-            android:id="@+id/recimage"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_marginStart="23dp"
-            android:layout_marginTop="17dp"
-            android:scaleType="centerCrop"
-            android:src="@mipmap/ic_launcher"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+<ImageView
+    android:id="@+id/recimage"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:layout_marginStart="23dp"
+    android:layout_marginTop="17dp"
+    android:scaleType="centerCrop"
+    android:src="@mipmap/ic_launcher"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
-            android:id="@+id/rectitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/abel"
-            android:text="Title"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/recimage"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:ignore="HardcodedText" />
+<TextView
+    android:id="@+id/rectitle"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:maxLines="1"
+    android:fontFamily="@font/alegreya_sc_bold"
+    android:text="Title"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@+id/recimage"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="HardcodedText" />
 
-        <TextView
-            android:id="@+id/recdescription"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:ellipsize="end"
-            android:fontFamily="@font/abel"
-            android:maxLines="2"
-            android:text="This item is the best in the market"
-            android:textColor="@color/black"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHeight_max="200dp"
-            app:layout_constraintStart_toEndOf="@+id/recimage"
-            app:layout_constraintTop_toBottomOf="@+id/rectitle"
-            app:layout_constraintWidth_max="200dp"
-            tools:ignore="HardcodedText" />
+<TextView
+    android:id="@+id/recdescription"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:fontFamily="@font/abel"
+    android:maxLines="2"
+    android:text="This item is the best in the market"
+    android:textColor="@color/black"
+    android:textSize="17sp"
+    android:layout_marginStart="5dp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toEndOf="@+id/recimage"
+    app:layout_constraintTop_toBottomOf="@+id/rectitle"
+    tools:ignore="HardcodedText" />
 
+<TextView
+    android:id="@+id/recprice"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="7dp"
+    android:layout_marginTop="40dp"
+    android:fontFamily="@font/abel"
+    android:text="KSH 2640"
+    android:textColor="@color/black"
+    android:textSize="17sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toEndOf="@+id/recimage"
+    app:layout_constraintTop_toBottomOf="@+id/recdescription"
+    tools:ignore="HardcodedText" />
 
-        <TextView
-            android:id="@+id/recprice"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="7dp"
-            android:layout_marginTop="40dp"
-            android:fontFamily="@font/abel"
-            android:text="KSH 2640"
-            android:textColor="@color/black"
-            android:textSize="17sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toEndOf="@+id/recimage"
-            app:layout_constraintTop_toBottomOf="@+id/recdescription"
-            tools:ignore="HardcodedText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
-
-</androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>

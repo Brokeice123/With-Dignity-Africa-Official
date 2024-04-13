@@ -37,51 +37,64 @@
         android:layout_height="match_parent"
         android:layout_marginTop="55dp">
 
-        <TextView
-            android:layout_width="250dp"
-            android:layout_height="50dp"
-            android:id="@+id/rectitle"
-            android:layout_marginTop="10dp"
-            android:textSize="20sp"
-            android:gravity="center"
-            android:fontFamily="@font/andada"
-            android:layout_marginStart="60dp"
-            android:text="Title"
-            tools:ignore="HardcodedText" />
-
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="220dp"
             android:id="@+id/recimage"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="10dp"
             android:textSize="20sp"
             android:gravity="center"
             android:fontFamily="@font/andada"
             android:background="@mipmap/ic_launcher"
             android:layout_marginStart="10dp"
+            android:scaleType="centerCrop"
             android:layout_marginEnd="10dp" />
 
         <TextView
-            android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:id="@+id/recdescription"
-            android:layout_marginTop="300dp"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:id="@+id/rectitle"
+            android:layout_marginTop="240dp"
             android:textSize="20sp"
-            android:fontFamily="@font/andada"
-            android:layout_marginStart="10dp"
-            android:layout_marginEnd="10dp"
-            android:text="Description"
+            android:gravity="center"
+            android:fontFamily="@font/alegreya_sc_bold"
+            android:layout_marginStart="60dp"
+            android:text="Title"
+            android:textStyle="bold"
+            android:textColor="@color/black"
             tools:ignore="HardcodedText" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:layout_marginTop="300dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recdescription"
+                android:textSize="20sp"
+                android:fontFamily="@font/andada"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Description"
+                android:textColor="@color/black"
+                tools:ignore="HardcodedText" />
+
+        </ScrollView>
 
         <TextView
             android:layout_width="250dp"
             android:layout_height="50dp"
             android:id="@+id/recprice"
-            android:layout_marginTop="500dp"
+            android:layout_marginTop="540dp"
             android:textSize="20sp"
-            android:fontFamily="@font/andada"
+            android:fontFamily="@font/abel"
             android:layout_marginStart="60dp"
             android:text="Price"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="@color/black"
             tools:ignore="HardcodedText" />
 
         <Button
