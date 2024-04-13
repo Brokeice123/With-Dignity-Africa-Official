@@ -35,6 +35,7 @@ class SplashScreenActivity : AppCompatActivity() {
             var gotoSignUp = Intent(this, SignUpActivity::class.java)
             startActivity(gotoSignUp)
         }
+
     }
 
     override fun onStart() {

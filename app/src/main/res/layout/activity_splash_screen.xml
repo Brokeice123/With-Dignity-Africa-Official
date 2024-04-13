@@ -38,13 +38,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="cursive"
         android:text="With Dignity"
         android:textColor="#000000"
-        android:textSize="50sp"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:background="@drawable/heart"
+        />
 
 
     <TextView
@@ -52,25 +59,25 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="170dp"
+        android:layout_marginTop="160dp"
         android:fontFamily="cursive"
         android:text="Africa"
         android:textColor="#000000"
-        android:textSize="50sp"
+        android:textSize="40sp"
         android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginTop="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="260dp"
         android:fontFamily="@font/average"
         android:text="Welcome to With Dignity Africa, the best place to ease funeral arrangements for you!"
         android:textColor="#C97886"
-        android:textSize="20sp"
+        android:textSize="25sp"
         android:textStyle="bold"
+        android:gravity="center"
         tools:ignore="HardcodedText" />
 
     <TextView
