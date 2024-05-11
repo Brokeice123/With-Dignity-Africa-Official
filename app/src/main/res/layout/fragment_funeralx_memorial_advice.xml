@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".advice.FuneralxMemorialAdvice">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/hometoolbar"
+            android:layout_height="wrap_content"
+            android:background="#ffff">
+
+
+            <TextView
+                android:id="@+id/marquee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/andada"
+                android:ellipsize="marquee"
+                android:scrollHorizontally="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="ADVICE"
+                android:textColor="#CB7987"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:columnCount="1"
+            android:rowCount="4">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/memorialandfuneral_image"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Differences between a Funeral and a Memorial Service"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="It is no longer strange to hear people talk about a memorial service when discussing a loved one’s death. The practice has become so popular that many now tend to confuse a memorial service with a funeral service. It is interesting though; they are two different events primarily meant to achieve the same aim- to pay last respects and remember the life of the deceased person. If you have just unfortunately lost a loved one and you’re seeking a better perspective in order to make a decision, this post is for you. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Funeral Service "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="A funeral service is a ceremony done at a graveside (if the body is to be buried) or sometimes at a chapel (especially if other means of non-traditional disposal of the body like cremation, alkaline hydrolysis and even body donation to a research facility, is chosen). A funeral service usually has the body of the deceased present at the ceremony, usually in an open casket so that members of the family, relatives and friends can truly see why they are there and can easily accept the death. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="A funeral service is also often preceded by a wake or what some might call a viewing. The embalmed body is seen by mourners as they come to pay their respects. You may ask, what if the body has been cremated and the urn is present? In this case, it will no longer be a funeral, but a memorial service. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Memorial Service "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="This is very similar to a funeral service so it is easy to confuse the two. Unlike a funeral service, a memorial is held to memorialise a deceased person without the body present. In most cases, it is held after the burial when the remains have been taken care of or the ash stored in an urn in the case of cremation. Still, there are a few cases where a memorial service happens before a funeral service to celebrate the life of the individual. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="A memorial service is usually done without the pressures that come with a funeral. The family is often more relaxed and have done a lot of planning to make it a great event. Some families plan a memorial service to allow friends and other extended family members (who could not be present at the funeral service) to pay their respect and say their goodbyes to the deceased. In such cases, the family usually would have done a small funeral service earlier involving only close family members, and maybe a few friends."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Similarities between Funeral Service and a Memorial Service "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="-Both the funeral service and memorial service are organised to achieve similar objectives, including helping the grieving family move on, helping everyone accept the reality of the death, and to honour the person that has passed. "
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="-The funeral service and the memorial service follow the same structure; starting with a viewing, the funeral, the committal and the reception. "
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="-Also, both the funeral service and the memorial consist of the same activities, from the religious elements of readings, songs and prayers to the eulogy and reflection."
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="-Both services can also be held in a church (chapel) or at the gravesite. "
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="-Both can cost a lot of money, ranging from thousands of Rands or dollars to millions of Rands for public, state or celebrity figures. "
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Quick Rundown of Differences "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="-The deceased body is present at a funeral service, but absent at a memorial service. "
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="-The presence of an urn (if the deceased’s body was cremated) indicates a memorial service, while an open or closed casket indicates a funeral service."
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="-In the case of interment (burial), the funeral service will usually happen just before the body is buried. A memorial service, on the other hand, can happen days before or days/months/years after a burial."
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Which should you choose? "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Which should you choose?
+
+Now that you know both activities are different, you can make a choice based on the situation on ground. What were the deceased loved one’s wishes? Did they state in the will that they preferred cremation or another funeral method? If that’s the case, what you’ll be having is a memorial service. If the deceased did not say, then you can have both a funeral service, with the body present, and a memorial service, with the urn (ashes) present. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="There are also some instances where the body of the deceased is not available. In others, the deceased may have willed that their body be donated to a research facility or a medical institution. In any of these situations, a memorial service is also adequate to pay tribute to the dead and honour the life they lived. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Apart from such situations, most families do not mind having both a funeral service and a memorial service. Usually, the funeral is held just before interment while the memorial may be held much later. Other families simply stick with the more traditional funeral service with the body present in an open or closed casket. Your decision would naturally be determined by circumstance, affordability, choice and preference of either the deceased or the family"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                tools:ignore="HardcodedText"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

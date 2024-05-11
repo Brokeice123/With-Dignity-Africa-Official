@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".advice.HelpfriendAdvice">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/hometoolbar"
+            android:layout_height="wrap_content"
+            android:background="#ffff">
+
+
+            <TextView
+                android:id="@+id/marquee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/andada"
+                android:ellipsize="marquee"
+                android:scrollHorizontally="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="ADVICE"
+                android:textColor="#CB7987"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:columnCount="1"
+            android:rowCount="4">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/griefing_man"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="How to hep a friend who has lost someone"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="The only thing worse than experiencing grief of a loved one's passing is watching a friend go through it The following tips will hep if you're feeling a little lost and unsure of what to do or say to hep a bereaved friend."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Reach out often"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Don't wait for a friend who's lost a loved one to reach out or assume that they will call or text you when they are finally ready. Grief alters every aspect of a person's life and they may feel too overwhelmed to reach out themselves - so dont be too quick to assume their silence means they need space or dont want to talk to you and dont stop checking in after a month or two have gone by."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Actively help out with practical tasks"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="While near everyone has a well-meaning 'just let me know if you need anything!' to offer a bereaved friend, most of the time someone who is grieving isn't going to reach out and ask to cash in on the offered help. So be proactive and make offers to do a specific things like help with meals, household chores, babysitting or grocery shopping - then show up and follow through."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Remember, it's important to always ask your friend before tasking a task into your own hand. It's possible that they won't be ready to have any items that remind them of their deceased loved one (even those that might strike you as odd or insignificant) moved, washed, or tossed out."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Talk about their loved one"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="You might be concerned thet bringing up the person who has passed will upset your friend or make them feel worse but most of the time, the opposite is true. Sharing stories and memories and speaking of the deceased person by name is often one of the things someone who is grieving will find comfort in. Follow your friend's lead and don't push the subject. Also, keep in mind that it rarely brings any comfort to announce that a deceased loved one is in a better place and nearly any sentence that begins with 'at least' is likely to come across as insensitive and invalidating to the genuine pain your friend is experiencing."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Be willing to listen without needing to 'fix' it"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="We know listening to someone you care about sharing their painful emotions can feel excruciatingly uncomfortable. But pushing through that discomfort to give your friend the presence of a caring listener is sometimes the best way to help.Of course, the impulse to 'fix' problems is a strong one, and you may feel tempted to try and cheer your friend up or otherwise jump into problem-solving mode. But resist the temptation to do so. Uncomfortably though it may be holding space and listening without inserting your own input or advice is one of the most important things to do."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

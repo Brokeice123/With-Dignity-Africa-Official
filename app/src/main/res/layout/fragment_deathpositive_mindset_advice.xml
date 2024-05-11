@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".advice.DeathpositiveMindsetAdvice">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/hometoolbar"
+            android:layout_height="wrap_content"
+            android:background="#ffff">
+
+
+            <TextView
+                android:id="@+id/marquee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/andada"
+                android:ellipsize="marquee"
+                android:scrollHorizontally="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="ADVICE"
+                android:textColor="#CB7987"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:columnCount="1"
+            android:rowCount="4">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/deathpositive_image"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Moving to a Death Positive Mindset "
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="“to live, is to die”,“nobody gets out of this life alive…”. Quotes such as these recognize the inevitability of death."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="“as constant as the Northern star”, if we’re to borrow a leaf from Shakespeare’s “Julius Caesar”."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Some people find talk of death morbid and creepy, but if there is one thing we all share as humans, it is that we have a common end, we all die eventually.  As true as this is, death is one thing we all do not want to talk about. The strange part is, even the most religious of us who believe in a better after life (eternity) shy away from the subject of death. There seems to be a certain cloud of superstition when people talk about death. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="To be honest, death- especially the death of a loved one- is a painful experience. If you’ve ever lost someone close, you know how terrible you felt, how painful it was, and how angry you felt that the person had to die. You may still be mourning the death of a sibling, a friend, a parent or just someone you cared about, so there is no pretending that it’s easy. But we also cannot shy away from the universal truth that we’re all going to die someday. If this is true, why shouldn’t we live our best lives today and prepare for our deaths the right way? "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="To be clear; talking about death or being death positive doesn’t mean being happy about death or welcoming the idea of dying. Rather, it is acknowledging the reality of death, owning the fears attached to it and recognizing that life is both short and ephemeral, and therefore should be valued. In a nutshell, this is what moving to a death positive mindset is about. There are also the subjects of green funerals, living funerals, and other practices that seek to take away the reticence and evasive attitude that we have towards the subject of death. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Going down memory lane…"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="In 2013, Caitlin Doughty, mortician and activist- known leader of the Death Positive Movement- published a simple tweet that asked a simple question; “Why are there a zillion websites and references to being sex positive and nothing for being death positive?” Although there had been a few discussions surrounding the topic before that time, it was that tweet that sparked days of conversations and elicited a bit more consciousness about death. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="According to her, it is okay to be interested in discussions about death, to improve the death culture and bring people out of hiding. Before 2013, Caitlin Doughty had started a YouTube series, Ask a Mortician, which found a way to answer very sensitive questions about death. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="The entire essence of a Death Positive Mindset is demystification- shedding off the cloak and secrecy. You may ask, how is it possible for death to be positive? Truth is, it is not. It is our attitude that can be positive. Rather than ignore the one thing we cannot escape, even with the best medical care and interventions, why not allow the reality to influence some decisions we make and actions we take? "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="So, how do you move to a death positive mindset? "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="There are several things you can begin to consider as you think about being death positive. These include; "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="-Acknowledging that we’ll all die someday"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="This is very important and is the first step to changing your mindset about death. Casting off the death denying culture, especially in this part of the world, can be a tough step, but it is necessary. And this is not just for older people who are, naturally, closer to the end. As younger adults, we have seen, time and again, that young people, even children, can also be snatched by the clutches of death. Although it is certain, no one really knows the timing. Often times, this lack of acknowledgement comes from our fear of dying that has deeply entrenched the culture of living. But shouldn’t there also be a culture of dying? "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="-Embrace conversations around death"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="There are a number of things we still do not know about death, but there’s a lot more one would not find out about if one keeps evading conversations. When people try to talk about End of Life planning, funeral insurance, funeral to-do lists, planning a green funeral and other subjects around death, it helps to be open to discussing these subjects. Talking about death doesn’t mean you’ll die the next day or anytime soon, it simply means you want to make things right before, when and after you do. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="-Plan for death while you’re alive "
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="This is another subject we also often try to avoid. We have seen over time how a patient becomes incapacitated in a hospital and cannot tell if he/she wants to remain on life support or be allowed to bow out naturally. We have also witnessed or heard stories of siblings going to war and families falling out because a benefactor failed to prepare a Will and Testament. What about people who passed away and left debts or assets that bereaved families had no idea existed? Planning for death is more like another topic we have treated known as End of Life Planning. It involves medical, legal, assets and debts, and Estate planning. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="-Live your best life everyday "
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="A death positive mindset brings an understanding that death will come, whether we like it or not. That consciousness is a constant reminder that we must enjoy each day as they come. If you need to take that trip, go on that vacation, visit the Niagra Falls, walk on Mount Everest, or go on a cruise, start doing them today. Procrastinating and putting things off like you know what the next day will bring is not the right attitude. When people say, “do not leave until tomorrow what you can do today”, it doesn’t only apply to work or responsibility; it also applies to having a great time. COVID has been positive in that it has shown us there are different ways to go about life that can be just as productive whilst allowing more time for one’s spirit"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="-Value your loved ones "
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="Beyond personal life, the realization that we could lose a loved one any minute pushes us to place more value on them. Like they say, you don’t know what you have until you realize you could lose it (my version). Stop thinking people will assume you love them or that you care; show it. Make that call, send that text, tell them how you really feel, buy them flowers now that they’re alive, take them out, pay them visits and just treasure each day that you have with them, because you have no idea if it will be the last."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Final Words… "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="If you really think about it, moving to a death positive mindset may not be creepy afterall. It actually makes a lot of sense to take steps that will ease tensions, help you make the best of your life, build better relationships, and just be more open about life (and the idea of dying too). "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="10dp"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

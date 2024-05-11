@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".advice.EulogyAdvice">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/hometoolbar"
+            android:layout_height="wrap_content"
+            android:background="#ffff">
+
+
+            <TextView
+                android:id="@+id/marquee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/andada"
+                android:ellipsize="marquee"
+                android:scrollHorizontally="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="ADVICE"
+                android:textColor="#CB7987"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:columnCount="1"
+            android:rowCount="4">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/eulogy_image"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="How to write &amp; deliver the Eulogy at a funeral "
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="So you are asked to give a eulogy for a loved one who has passed. What do you do? How do you start? What can you say and what is appropriate for the occasion? Eulogies started out as a form of praise for the recently deceased, A way to record their life and achievements orally and to remember them and share moments of their lives. They are meant to provide comfort and a last moment of inspiration or connection to the deceased.
+
+So we suggest that is how to start: "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Go through your memory of the deceased: "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Who was your loved one really? What was the essence of their being? Try and write down all the adjectives you can think of that describe who they were. A funny man? A kind woman. A formidable person? Are there any specific examples of their lives that convey who they were? Can you tell them in a succinct story?
+
+What were their hopes and dreams? Did they achieve all or most of them? What anecdote can you share that shows this? How would they have wanted to be remembered? "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Choose a few examples: "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Having trawled through your memories of the deceased you should pick three or four examples, adjectives or anecdotes that aptly describe who they were. It is usually a good idea to build your story around these key words and phrases. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Build a skeleton: "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Now you have your memories and examples. build out a skeleton of what you would like to say. It should have an introduction, a middle and an ending. It should be authentic and be written in your voice. If you’re not a formal person, don’t write stilted, formal sentences. If you’re not a teenager, don’t use slang or colloquialisms. Ideally, what is on the page should sound like you. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Rehearse: "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="The best way to deliver a speech, which is what a Eulogy is, is to know your material cold. It is also great for you to internalize the general flow and language of the speech as that will still come through even when you are emotional. If you have someone who can help, rehearse in front of them. It may be awkward at first but it is helpful when you walk in front of your loved one’s relatives and friends to talk about them. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Ask for feedback: "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Ask someone you trust to give you some feedback on your performance of the Eulogy. Often, we have included things which we don’t need or forgotten something which is so illustrative that it needs to be covered. You will also feel more confident knowing that your Eulogy passes muster with another person. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="On the Day: "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Before you go to the service, print out a few copies of your Eulogy and give them to a few trusted people. It is easy to forget a few pieces of paper somewhere and having a few copies will give you some backup and a sense of security. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Breathe, you can do this. Right now, it is your job to comfort and inspire everyone at the service. Nobody is there to critique you, they want you do to well and they want to hear from you.
+
+Go out and do your best."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                tools:ignore="HardcodedText"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

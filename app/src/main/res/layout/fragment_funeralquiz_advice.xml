@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".advice.FuneralquizAdvice">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/hometoolbar"
+            android:layout_height="wrap_content"
+            android:background="#ffff">
+
+
+            <TextView
+                android:id="@+id/marquee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/andada"
+                android:ellipsize="marquee"
+                android:scrollHorizontally="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="ADVICE"
+                android:textColor="#CB7987"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:columnCount="1"
+            android:rowCount="4">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/questionsfuneral_image"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="20 Most Common Questions about a Funeral "
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="A funeral is a global practice. There might be differences in methods, traditions or religion, but funerals take place in every part of the world. There are several concepts and practices involved in a funeral and we know that this can be overwhelming for anyone. If you’ve just lost a loved one and have been trying to wrap your head around all of the issues around a funeral, then we can help. This post provides 20 questions and answers that you need to know about a funeral. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="1. Why hold a funeral? "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Funerals have been held for thousands of years as a way to give family and friends the chance to express their love and respect for the deceased person. If you have recently lost a loved one, a funeral can help you adjust and gain closure just by seeing how much your loved one was loved by other people. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="2. Must I respect the funeral wish of a deceased loved one? "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="First of all, it is important to note that every adult individual has a right to decide what they want to do with their body, even after death. So, when a loved one has a funeral wish, it is important to respect it because they must be interred based on their own religious, traditional or philosophical beliefs. If a loved one desires a cremation when they pass away, we should have them cremated, regardless of our own misgivings or opinions. The same goes for full body donation to research and so on."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="3. How much does a funeral cost?"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="The cost of a funeral usually depends on the scope of the funeral and what the family can afford. A typical Kenyan funeral can cost anything from $2,000 to $10,000. Some high-end families can go way beyond that mark as well. In the United States, the average funeral costs between $6,500 and $8,000, while an average UK funeral can cost around £5,500. This cost often covers the casket, opening and closing of ground, grave plot, funeral parlour services and embalming, transport, refreshment, etc. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="4. Who is a funeral director?"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="A funeral director is someone who manages everything regarding the funeral, from taking care of the remains to planning and handling funeral details, burial and ceremony. He or she may also offer advice on any legal documentation required."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="5. What is a cremation and why is it considered?"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Just like burials, cremation is a method of disposing of a dead body. It involves burning the entire body to reduce it to its essential elements. A cremation furnace or chamber is the most known method in most parts of the world, and the body is reduced to ash using temperatures of up to 1,800 degrees, while the cremains (cremated remains) are then stored in a vase, known as an urn. Cremation is becoming a popular practice because it is cheaper, simpler and has some roots in many traditions in Asia and other parts of the world."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="6. Can I witness a loved one’s cremation?"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="This depends on your wish. If you and other members of your family wish to be present, it is possible. However, most people prefer not to be present and will only take pleasure in keeping the ash for a while until they are ready to bury it, scatter it or plant it into a tree. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="7. How long does a cremation take?"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="The duration depends on the efficiency of those handling the process; from how soon you’re able to get the death certificate from the doctor to how early a cremation session can be booked. Typically, the entire process can take as little as a few days to a few weeks. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="8. Can I fly with a loved one’s ashes?"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="As long as the ashes or “cremains” are stored in an x-rayable container and you have checked with the airline to know if you can bring it as carry on or ship them as cargo, then it is entirely possible to fly with a loved one’s cremains. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="9. What is embalming and why is it necessary? "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="It is very likely that you or your family would require some time to plan the funeral. This might take days or weeks. To preserve the deceased’s body, embalming must be carried out. It is the use of chemicals to reduce and slow down tissue decomposition to enable viewing at a later date."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="10. Will my loved one’s internal organs be removed during embalming?"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Unless removed for autopsy, this is not required. After all, these organs are needed for the chemical injection to be effective. Parts of the body like the head, the torso and stomach are usually treated separately. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="11. Are chemicals used during embalming?"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="The answer is yes. There are special chemicals formulated for tissue preservation, including formaldehyde, glutaraldehyde and methanol. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="12. What does a pre-arranged funeral mean? "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="This is a situation where a person makes much of the necessary plans for their funeral before they pass away. The details of the plan are usually clearly spelt out and sent to a funeral home prior to death, thereby reducing the burden of funeral on the surviving family. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="13. What is a living funeral?"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="This is when a funeral service is held in honour of a person who is still alive. Such a person may simply be an aged man or woman who senses that death may just be close or someone suffering from a terminal illness and wants to have one last time with friends and family just to say goodbye. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="14. What is a Green Funeral?"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="This is more of a recent development that seeks alternative ways of disposing a dead body in a way that does not harm the environment. A good example is using a cardboard box or a mushroom suit instead of a coffin, to aid quicker decomposition."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="15. Why is an obituary notice important?"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="The simple essence of an obituary notice is to inform friends and loved ones of the passing of an individual, as well as notify them of funeral arrangements and dates. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="16. Should a child attend a funeral service?"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="While it is important to be observant and sensitive to their needs and how they deal with grief, you should know that it is impossible to shield them from the pain of death. Allowing children attend funerals is not only respectful to them, it might just be a great way to teach them lifelong coping skills. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="17. Why are flowers sent?"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="It is true that flowers are ornamental on gravesites. However, flowers are also very emotional objects. They are used to express feelings of sympathy and love which you may or may not be able to express with words. Lilies, Chrysanthemums and Statice are all good examples of flowers that express life and hope, loyalty and devotion, and remembrance respectively."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="18. What do funeral homes do? "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="A well established, reputable funeral home can do everything from the moment someone passes away to the very moment the person is buried. Apps such as With Dignity Africa can now obviate the requirement to deal directly with the funeral home however. Services include transporting the body from place of death to the funeral home; dressing and embalming the body; helping with securing certificate of death and other documents like repatriation permits (where necessary); composing the obituary in consultation with the family, obtaining details relating to preferred cemetery or crematory; providing memorial products; organising the funeral service- including arranging flowers, photos and other memorial pieces; and helping with post-funeral service arrangements. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="19. Are funeral homes regulated? "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Yes, funeral homes are regulated. In most other parts of the world, this regulation is done regionally, with each state or local government regulating funeral homes with some established agencies. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="20.  What is an alternative container?"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="An alternative container could be green-funeral inspired. It is typically made of non-metal receptacle and does not include ornamentation. This can be a wood box or fibreboard and are less expensive compared to traditional caskets. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                tools:ignore="HardcodedText"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

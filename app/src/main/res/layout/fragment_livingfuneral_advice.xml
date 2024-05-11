@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".advice.LivingfuneralAdvice">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/hometoolbar"
+            android:layout_height="wrap_content"
+            android:background="#ffff">
+
+
+            <TextView
+                android:id="@+id/marquee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/andada"
+                android:ellipsize="marquee"
+                android:scrollHorizontally="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="ADVICE"
+                android:textColor="#CB7987"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:columnCount="1"
+            android:rowCount="4">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/livingfuneral_image"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Living Funeral"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="What is a Living Funeral? "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Isn’t it strange how most people wait until the death of a loved one before they share the amazing things they have to say about that person? Guests bring flowers, friends tell stories of how great a person they are and people find the time to have a great moment one last time to celebrate a life well lived. This is likely going to be the case at your funeral as well, when the time comes. But what if you could actually witness all of these? What if you could have a final moment with your loved ones and tell them just how you feel about them? Well, you can. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="A Living Funeral is also sometimes called a pre-funeral. It is a ceremony held while a person is still alive to celebrate the life of that person before they die. It is an opportunity for a person, who probably already knows they have a short time left, to get closure and actually be a guest at their own farewell party. Living funerals have altered the nature of otherwise gloomy situations during farewells, making it easier for the soon-to-be bereaved to accept the inevitable demise of their soon-to-be deceased family or friend. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="There are people who believe that the greatest honour one can give a person is the kind of burial they’re able to give at death. So, they don’t mind spending thousands of dollars and Rands to give that person a “befitting funeral”. The only problem is, the person is not there to see it. But that is changing nowadays, as more people continue to accept the concept of living funeral to pay last respects. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="To put it quite simply, it is a funeral that is held for someone who is still alive. It may present an opportunity for forgiveness and healing; for hatchets to be buried; for grudges to be resolved and for everyone to say goodbye with a clear conscience. The practice is common among people with a terminal illness or who are simply old, especially those who feel they no longer have much time on their hands. The traditional funeral is often about what the bereaved want, especially if there is no will in place. A living funeral offers something different; it is focused on what the soon-to-be deceased actually wants. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Surprisingly, the trend became quite popular and spread across Asia and the UK in the 1990s, even among seemingly healthy people. A good example was the late Japanese actress, Takiko Mizunoe, who at 78 decided to organize a living funeral. She was neither sick nor ailing. In fact, she lived for another 16 years and died in November 2009 at the age of 94. That alone should debunk any talk of superstition or jinx. Another very good example is seen in Eddie Murphy’s Coming 2 America, when his father King Jaffe Joffer had his living funeral (during which he died). "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Tuesdays with Morrie is, perhaps, one of the best remembered living funerals in history. It was adapted as both a movie and a book (which became a New York Times bestseller in 2000). The 1997 memoir written by writer Mitch Albom was a vivid account of the times he spent with his 78-year old professor who, at the time, was dying from Amyotrophic Lateral Sclerosis (ALS). The book opened up hearts and sought to trigger acceptance of the realities of death and dying, described as natural events and showed how the prof had moments to celebrate his life and even his death before he passed on. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="If you really think about it, it could be nice to actually share that final moment, share stories of one’s life and have a sort of reflection. It could also be a time to tell your loved ones that it’s okay for them to move on after you pass. If you have an aged parent and it is something you’re considering, be sure to patiently explain the concept to them and why you think it could be good for them and everyone else. Be careful though, so it doesn’t seem like you can’t wait to say goodbye to them. This is why it is best for the person concerned to bring it up. However, there’s nothing wrong with selling the idea to a loved one."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Planning a Living Funeral "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Death is a painful experience; one that is very difficult to accept. So, it must be even more difficult to accept it before it happens, but it is a great way to reduce the shock and provide closure for everyone. If you’ve been given the responsibility to plan a loved one’s living funeral, maybe a parent or an uncle or an aged or terminally ill relative, there are a few things you must bear in mind, including that it is a time to celebrate and not to be gloomy. Here is a step-by-step guide to planning a living funeral."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Decide what type of service you want to have"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Basically, a living funeral is cheaper than a traditional funeral. This is because some of the components that make up an actual funeral expenses are not added. Digging and closing ground and paying for a burial plot are some examples. But beyond that, you can go over other details like how many people should be invited; if it should be like a party with a Deejay or whether it should be a Church service or any other detail that requires decision making. Ensure you find out what the guest of honour (the person for whom you’re planning the living funeral) wants and reach a decision. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Get an officiator or MC"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="epending on the setting, you’ll need to find someone to coordinate affairs at the event. Such a person will be responsible for moving things along based on a schedule or outline of programme they have been given. If it is a church service, the pastor will naturally be the officiating minister. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Choose a date."
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="If your guest of honour is terminally ill, you’d need to speak with their doctor to find out what dates will be convenient for a living funeral. This is important for convenience. It needs to be a day when they don’t have a medical appointment, a session with the doctor or even surgery."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Choose a location"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="his can be the person’s home or the home of a loved one. It can also be held at a park or even a community centre. Just know that the venue has to be a place that can accommodate all the guests and allow them to bring back fond memories. Holding it at a funeral home might be taking it a bit too far."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Send out invitations"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Try not to stun your guests with the invitation. Make it as clear as possible what a living funeral is and why it is important. Note that many people may object to the idea and not show up, but it’s best you do not assume everyone knows what it is, because that might not be realistic. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Ask for mementos"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="To make that day a truly memorable one, it is important to bring items and materials that your guest of honour and other guests can relate to. These can be pictures, a photo album, flowers, mementos and some other extras to make the event as interesting and as memorable as you can. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Do something truly special"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="If you can, you may invite a singer or celebrity that he/she has always wanted to meet. You may also decide to do something else that they will truly cherish in their final days. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                tools:ignore="HardcodedText"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

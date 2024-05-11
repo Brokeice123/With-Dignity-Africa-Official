@@ -2,7 +2,10 @@ package com.example.withdignityfinal
 
 import android.annotation.SuppressLint
 import android.content.ContentValues.TAG
+import android.content.Context
 import android.content.Intent
+import android.net.ConnectivityManager
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -20,8 +23,16 @@ import com.example.withdignityfinal.data.PackageItem
 import com.flutterwave.raveandroid.RavePayActivity
 import com.flutterwave.raveandroid.RaveUiManager
 import com.flutterwave.raveandroid.rave_java_commons.RaveConstants
+import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.firestore.FirebaseFirestore
+import com.google.firebase.functions.FirebaseFunctions
+import com.google.firebase.functions.functions
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
 class CheckoutFragment : Fragment(), CartAdapter.OnTotalPriceUpdatedListener {
     private lateinit var db: FirebaseFirestore
@@ -145,15 +156,17 @@ class CheckoutFragment : Fragment(), CartAdapter.OnTotalPriceUpdatedListener {
             if (resultCode == RavePayActivity.RESULT_SUCCESS) {
                 // Payment was successful
                 updatePurchaseStatus()
-                sendConfirmationEmail()
+                sendOrderConfirmation()
                 Toast.makeText(context, "Purchase successful!", Toast.LENGTH_SHORT).show() // Notify user of successful purchase
                 // Update purchase status in Firebase
             } else if (resultCode == RavePayActivity.RESULT_ERROR) {
                 // Payment failed
                 Log.e(TAG, "Payment failed: $message")
+                Toast.makeText(context, "Payment failed: $message", Toast.LENGTH_SHORT).show() // Notify user of failed purchase
             } else if (resultCode == RavePayActivity.RESULT_CANCELLED) {
                 // Payment was cancelled
                 Log.i(TAG, "Payment cancelled: $message")
+                Toast.makeText(context, "Payment cancelled: $message", Toast.LENGTH_SHORT).show() // Notify user of cancelled purchase
             }
         }
     }
@@ -213,15 +226,90 @@ class CheckoutFragment : Fragment(), CartAdapter.OnTotalPriceUpdatedListener {
         }
     }
 
+    private fun sendOrderConfirmation() {
+        val firebaseAuth = FirebaseAuth.getInstance()
+        firebaseAuth.currentUser?.reload()?.addOnCompleteListener { task ->
+            if (task.isSuccessful) {
+                val user = firebaseAuth.currentUser
+                val name = user?.displayName ?: "Customer"
+                val email = user?.email ?: ""
+                val emailTo = email
+                val companyEmail = "mariaolotira@gmail.com"
+                val emailSubject = "Purchase Confirmation"
+                val itemsList = generatePurchasedItemsList()
+                val totalAmount = adapter.calculateTotalPrice()
+                val emailBody = StringBuilder()
+                    .append("Dear $name,\\n\\n")
+                    .append("This email is to confirm that the following products have been purchased:\\n\\n")
+                    .append(itemsList)
+                    .append("\\n\\nTotal Amount: KES $totalAmount\\n\\n")
+                    .append("by $name ($email)")
+                    .append("Thank you for your purchase.")
+                    .toString()
+
+                if (isNetworkAvailable(requireContext())) {
+                    try {
+                        Log.d(TAG, "Attempting to send email...")
+                        sendEmailWithCloudFunction(emailTo, emailSubject, emailBody)
+                        Log.d(TAG, "Email sent successfully!")
+                        Toast.makeText(context, "Email sent successfully!", Toast.LENGTH_SHORT).show()
+                    } catch (e: Exception) {
+                        Log.e(TAG, "Failed to send email: ${e.message}")
+                        Toast.makeText(context, "Failed to send email. Please check your internet connection.", Toast.LENGTH_LONG).show()
+                    }
+
+                } else {
+                    Log.e(TAG, "No network connection available. Unable to send order confirmation email.")
+                    Toast.makeText(context, "No network connection available. Unable to send order confirmation email.", Toast.LENGTH_LONG).show()
+                }
+            } else {
+                Log.e(TAG, "Failed to reload user data.", task.exception)
+                Toast.makeText(context, "Failed to reload user data. Please check your internet connection.", Toast.LENGTH_LONG).show()
+            }
+        }
+    }
+
+    private fun sendEmailWithCloudFunction(to: String, subject: String, body: String) {
+        val functions = FirebaseFunctions.getInstance()
+        val data = hashMapOf(
+            "to" to to,
+            "subject" to subject,
+            "body" to body
+        )
+
+        functions.getHttpsCallable("sendOrderConfirmation")
+            .call(data)
+            .addOnSuccessListener { result ->
+                val success = result.data as Boolean
+                if (success) {
+                    Toast.makeText(context, "Email sent successfully!", Toast.LENGTH_SHORT).show()
+                } else {
+                    Toast.makeText(context, "Failed to send email. Please check your internet connection.", Toast.LENGTH_LONG).show()
+                }
+            }
+            .addOnFailureListener { exception ->
+                Toast.makeText(context, "Error sending email: ${exception.message}", Toast.LENGTH_LONG).show()
+            }
+    }
+
+
+    private fun isNetworkAvailable(context: Context): Boolean {
+        val connectivityManager =
+            context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
+        val networkInfo = connectivityManager.activeNetworkInfo
+        return networkInfo != null && networkInfo.isConnected
+    }
+
+
 
 
     private fun generatePurchasedItemsList(): String {
         var itemsList = ""
         for (item in cartItems) {
-            itemsList += "${item.packageItem.name} - Quantity: ${item.quantity}\n"
+            itemsList += "${item.packageItem.name} - Quantity: ${item.quantity}, "
         }
         Log.d(TAG, "Generated Items List: $itemsList") // Debug log
-        return itemsList
+        return itemsList.trimEnd(',')
     }
 
 

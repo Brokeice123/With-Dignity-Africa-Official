@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".advice.CostAdvice">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/hometoolbar"
+            android:layout_height="wrap_content"
+            android:background="#ffff">
+
+
+            <TextView
+                android:id="@+id/marquee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/andada"
+                android:ellipsize="marquee"
+                android:scrollHorizontally="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="ADVICE"
+                android:textColor="#CB7987"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:columnCount="1"
+            android:rowCount="4">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/moneypolicy_image"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="What Your Funeral Policy Covers and What a Funeral Actually Costs. "
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Over time, we have seen cases where the family of someone who has passed on is left to bear the heavy burden of funding the funeral of their loved one. All too often, preparing for death is a largely overlooked subject due to superstition and the attitude of many who don’t realise how fleeting life can be. Getting a funeral policy is one way to prepare for that time and it eases the burden your family and loved ones would need to bear.
+
+But what exactly is a funeral policy? How does it work? What does it cover? If you have these and more questions running through your mind, there’s no need to worry. This post will tell you everything you need to know about a funeral/burial insurance policy. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="What exactly is a funeral policy? "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="A funeral policy is an insurance policy you take up to cover your funeral costs in the event that you die or lose a loved one. It is a way to alleviate the financial burden for you or your family and ensures a dignified sendoff without leaving your family in debt after your burial or the burial of a loved one. In order for the policy to be paid out, one needs to ensure that: "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="-all relevant information is correctly given to the insurance company"
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="-Your policy payment terms are always up to date and not a single payment is missed."
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="In the event of death of a policy beneficiary, the lump sum of money that the policy is worth or the cover amount for the beneficiary is paid to the  authorized member. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="What a funeral policy covers "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="There are two basic types of funeral policy, and we’ll see what each of them covers with regards to a funeral. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="1. Standard Funeral Policy "
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="A standard policy is paid to a beneficiary in the event of death. If you have such a policy, your authorized relative or friend can access the insurance payout to take care of arrangements, such as; "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="-Funeral Services: These costs include funeral parlours who handle matters relating to embalming, casket or coffin and interment, among other funeral services. These services and related costs approximately $2,500."
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="-Transport: Transportation is another component that is covered by a typical funeral policy, as moving the body from the morgue to the cemetery must be taken care of. "
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="-Opening/Closing of Grave (interment): This is, perhaps, one of the main activities at a funeral. It requires actual digging, laying the body in the ground and covering it up. This costs money as well; both for labour and for municipal grave fees. Your standard funeral policy covers this cost also. "
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="- Vault/Headstone, Notices and Flowers: A typical grave site is not complete without a vault and/or a tombstone, also called a headstone. It does not only identify the spot a person is buried, but also beautifies it and gives room for inscriptions. This, along with the obituary notices and flowers, may be covered by a funeral policy. "
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="- Cremation: Should you wish to be cremated when you die, you must ensure you state this in a document such as a will or advance directive, and your insurance company will cover this cost as part of your funeral policy. A typical cremation can cost between Ksh 20,000 and Ksh 100,000 in Kenya. Note that an urn will also be needed for cremation. A funeral policy generally covers this as well."
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:layout_marginTop="10dp"
+                android:text="It is possible that you may leave some debts, medical bills, mortgages or even legal services behind. Your beneficiary is at liberty to use a part of your policy to cover these debts. They may also use all of it, depending on the situation. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="2. Preneed Funeral Policy"
+                android:layout_marginStart="20dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="17sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:layout_marginTop="10dp"
+                android:text="A preneed funeral insurance may be offered by a life insurance company or, in some countries, a funeral home. It is more or less, paying upfront for funeral arrangements. What this means is that you’re paying for the casket, the plot, the embalment and other items and services required for your future burial at their present costs. What this means is that, even if prices of items and services hit the roof in the future, you would’ve paid for them in the past. Rather than give the funds to a loved one upon your death, the insurance company pays it directly to the funeral parlour. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Why is a Funeral Policy Necessary? "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Let’s consider a few points. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="-A funeral policy helps you prepare for your death in the future. "
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="-It eases the financial pressure on your loved ones after you’re gone, especially with regards to your burial costs. "
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="-Using a preneed funeral policy can help save some money because you’re likely to spend less for more."
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="-Helps limit the trauma of a person’s passing by relieving financial stress felt by your loved ones. "
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="-The satisfaction of getting a befitting and dignified burial when you die. "
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="What does a funeral cost? "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="The cost of a funeral varies from one individual to another and several factors can determine the actual cost. From type of funeral, need for repatriation, size of the event and luxury of the items, funerals have become a major activity across the world with the price tags to match.
+
+These individual factors include location, circumstances, distance and economic class, however, we can give an estimate based on recent data. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="In 2019, the National Funeral Directors Association in the US released the result of a survey that showed the average cost of a funeral without a vault was $7,640 and $9,135 with a vault included."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="-Casket: A casket can cost anywhere from Ksh20,000 to Ksh100,000 depending on the type of material (wooden/steel), the style of casket, accessories and quality. "
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="-Funeral Parlour Fees: Are not quoted separately but rather are included in the total cost of the funeral. These include collection and taking care of the body as well as logistics, burial and municipal grave fees, documentation and may include repatriation within or outside of Kenya. The average all-inclusive funeral package will cost between Ksh50,000 and Ksh300,000."
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="-Catering Services: Low budget (Ksh1,000 – Ksh3,000 per person) This could cover basic refreshments like tea, coffee, mandazi and snacks. Medium budget (Ksh3,000 – Ksh5,000 per person) This might include a selection of local dishes like rice, lentils, vegetables and maybe some protein options. High budget (Ksh5,000 and above per person)This could involve a more elaborate spread with a wider variety of dishes, potentially including desserts. "
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lato"
+                android:text="-Funeral Groceries: This is an area that is often overlooked but, in most cases, there are family, friends and other well-wishers who will be at the familial home or even staying with the family over the entire period of mourning. This means that the standard grocery bill increases significantly over the two to three weeks that the funeral services are being arranged. "
+                android:layout_marginStart="20dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Whatever the case, a funeral policy, in some cases, may not even cover all of these costs, but will go a long way to help your loved ones give you a dignified sendoff. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                tools:ignore="HardcodedText"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

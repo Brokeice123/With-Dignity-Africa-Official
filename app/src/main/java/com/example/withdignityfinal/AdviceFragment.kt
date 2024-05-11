@@ -1,59 +1,134 @@
 package com.example.withdignityfinal
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.cardview.widget.CardView
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [AdviceFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class AdviceFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
-
+    @SuppressLint("MissingInflatedId")
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_advice, container, false)
+        val view = inflater.inflate(R.layout.fragment_advice, container, false)
+
+        val helpfriendAdvice = view.findViewById<CardView>(R.id.HelpfriendAdvice)
+        helpfriendAdvice.setOnClickListener {
+            // Handle click event here
+            val fragment = com.example.withdignityfinal.advice.HelpfriendAdvice()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_container, fragment as Fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+        val willAdvice = view.findViewById<CardView>(R.id.WillAdvice)
+        willAdvice.setOnClickListener {
+            // Handle click event here
+            val fragment = com.example.withdignityfinal.advice.WillAdvice()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_container, fragment as Fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+        val whattodoAdvice = view.findViewById<CardView>(R.id.WhattodoAdvice)
+        whattodoAdvice.setOnClickListener {
+            // Handle click event here
+            val fragment = com.example.withdignityfinal.advice.WhattodoAdvice()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_container, fragment as Fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+        val honouringAdvice = view.findViewById<CardView>(R.id.HonouringAdvice)
+        honouringAdvice.setOnClickListener {
+            // Handle click event here
+            val fragment = com.example.withdignityfinal.advice.HonouringAdvice()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_container, fragment as Fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+        val livingfuneralAdvice = view.findViewById<CardView>(R.id.LivingfuneralAdvice)
+        livingfuneralAdvice.setOnClickListener {
+            // Handle click event here
+            val fragment = com.example.withdignityfinal.advice.LivingfuneralAdvice()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_container, fragment as Fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+        val deathpositiveMindsetAdvice = view.findViewById<CardView>(R.id.DeathpositiveMindsetAdvice)
+        deathpositiveMindsetAdvice.setOnClickListener {
+            // Handle click event here
+            val fragment = com.example.withdignityfinal.advice.DeathpositiveMindsetAdvice()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_container, fragment as Fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+        val funeralquizAdvice = view.findViewById<CardView>(R.id.FuneralquizAdvice)
+        funeralquizAdvice.setOnClickListener {
+            // Handle click event here
+            val fragment = com.example.withdignityfinal.advice.FuneralquizAdvice()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_container, fragment as Fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+        val culturalpracticesAdvice = view.findViewById<CardView>(R.id.CulturalpracticesAdvice)
+        culturalpracticesAdvice.setOnClickListener {
+            // Handle click event here
+            val fragment = com.example.withdignityfinal.advice.CulturalpracticesAdvice()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_container, fragment as Fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+        val burialxCremationAdvice = view.findViewById<CardView>(R.id.BurialxCremationAdvice)
+        burialxCremationAdvice.setOnClickListener {
+            // Handle click event here
+            val fragment = com.example.withdignityfinal.advice.BurialxCremationAdvice()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_container, fragment as Fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+        val costAdvice = view.findViewById<CardView>(R.id.CostAdvice)
+        costAdvice.setOnClickListener {
+            // Handle click event here
+            val fragment = com.example.withdignityfinal.advice.CostAdvice()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_container, fragment as Fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+        val funeralxMemorialAdvice = view.findViewById<CardView>(R.id.FuneralxMemorialAdvice)
+        funeralxMemorialAdvice.setOnClickListener {
+            // Handle click event here
+            val fragment = com.example.withdignityfinal.advice.FuneralxMemorialAdvice()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_container, fragment as Fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+        val eulogyAdvice = view.findViewById<CardView>(R.id.EulogyAdvice)
+        eulogyAdvice.setOnClickListener {
+            // Handle click event here
+            val fragment = com.example.withdignityfinal.advice.EulogyAdvice()
+            val transaction = requireActivity().supportFragmentManager.beginTransaction()
+            transaction.replace(R.id.frame_container, fragment as Fragment)
+            transaction.addToBackStack(null)
+            transaction.commit()
+        }
+
+        return view
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment AdviceFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            AdviceFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
-            }
-    }
+
 }

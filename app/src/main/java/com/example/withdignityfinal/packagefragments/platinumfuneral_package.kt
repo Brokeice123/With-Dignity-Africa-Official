@@ -63,7 +63,7 @@ class platinumfuneral_package : Fragment() {
     }
 
     private fun clicked(button: Button, context: Context) {
-        button.text = "clicked"
+        button.text = "Added"
 
         val myAnim: Animation = AnimationUtils.loadAnimation(context, R.anim.bounce)
         val interpolator = MyBounceInterpolator(amplitude = 0.2, frequency = 20.0)

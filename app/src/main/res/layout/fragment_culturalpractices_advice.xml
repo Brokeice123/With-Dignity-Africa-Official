@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".advice.CulturalpracticesAdvice">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:id="@+id/hometoolbar"
+            android:layout_height="wrap_content"
+            android:background="#ffff">
+
+
+            <TextView
+                android:id="@+id/marquee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/andada"
+                android:ellipsize="marquee"
+                android:scrollHorizontally="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:singleLine="true"
+                android:text="ADVICE"
+                android:textColor="#CB7987"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                tools:ignore="HardcodedText" />
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:columnCount="1"
+            android:rowCount="4">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@drawable/culturalpractices_image"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Cultural Practices around Headstones and Unveilings "
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="If you’ve ever been to a cemetery, then the first thing you probably saw was a row of elevated concrete slabs over the grave with various inscriptions. This slab is called a headstone. At a closer look, you probably saw “the deceased person’s name”; the dates of the deaths” and some personal quotes, inscriptions or messages such as “ loving husband, father, dedicated employee” or somesuch. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="You may have rightly concluded it was just an innovation to help identify each grave by the name on it. Well, you may not be far from the truth, but it’s important to know that the headstone is a tradition that has been in existence for more than 3,000 years. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Tombstones are a component of funerals that has been passed on from generation to generation. It can be referred to as a tombstone, headstone or gravestone and is popular among Christians, Jews and some Muslims. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Along with a tombstone is a tradition known as “Unveiling”. It is a celebratory event that reveals the headstone and is a way to honour the individual that has passed away. In the olden days it was used as a marker to easily identify your loved ones resting place. However it has now become more of a monument and celebration. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="A tombstone comes in different forms and sizes, depending on your budget and class. You may give a designer your own style to work on or simply pick from a showroom. The type, material used and design will determine the cost. You may also choose to customise it the way you want, add a statue, an object or something personal to the deceased- just to give them that last honour."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Christian/Jewish Traditions about Headstones and Unveilings"
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Christians and Jews, on one hand, draw reference from the story of Jacob and Rachel in the Christian Bible. In Genesis chapter 25 and in verse 20, it says Jacob (the patriarch of Israel) raised a monument on the grave of Rachel. This underscores a tradition that is more than 3,000 years old for Christian and Jewish people. Even today, that tradition holds true among Christians and the Jewish people. No size is stipulated for the headstone, but that is often determined by the guidelines of the cemetery. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="Also, the headstone would usually be engraved with the deceased person’s name, date of birth and death, relationship with the bereaved, and a final note that says “may his/her soul rest in peace” written in English and Hebrew. For the Jewish people, the Unveiling is done after the mourning period, known as Kaddish in Hebrew. Parents are mourned for 11 months while other relatives may be mourned for 30 days. Whatever the case, the unveiling should be done within the first year after death. In Israel, this is done between one and 12 months after mourning. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="During the unveiling ceremony itself, the activities that take place depend on the preferences of the family. There can be a reading of the Psalms, a eulogy about the deceased, the actual unveiling (removal of cloth) and a prayer for God’s compassion known as El Maleh Rahamim. Some other Jewish families include a mourner’s kaddish to the rituals, a prayer that gives praises to God, but done aloud only if attendees are more than 10 in number. Attendance at the Unveiling is strictly disretional. A family may decide to only invite close friends and family as well as a Rabbi. Some others may open it to whoever wishes to attend.
+
+There are several other cultural inclinations to headstones and Unveilings, and we’ll help you go through each of them to give you a better understanding and perspective. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/alegreya_sc_bold"
+                android:text="Islamic Headstone Traditions "
+                android:layout_marginStart="10dp"
+                android:textStyle="bold"
+                android:textColor="@color/pink"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="There are many beliefs among preachers of Islam when it comes to Headstones. While the Hadiths of the prophets suggest that graves should be flattened out as the rest of the ground, the concern to ensure people and animals do not trodden on graves made it necessary to raise it to a certain height, so that it can be recognized as a grave and not walked over or used for seating. There is also a controversy about the size of the gravestone or whether there should be an inscription or not. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="While the more conservative muslim sects follow the strict teachings of the prophets that forbid such inscriptions and provide very humble descriptions for tombstone sizes, there are some, usually, more affluent muslim sect in parts of the world that actually raise a tombstone and inscribed the name of the deceased and date of death on it. Islam forbids making a luxury of funerals or graves, so painting, luxury structures or even inscribing verses of the Q’uran."
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/lato"
+                android:text="However, it is now permissible to erect a headstone for the purpose of identification.
+
+Ideally, therefore, an unveiling is considered Haram in Islam, but across the West and the East, there are people who practice some form of unveiling and grave visiting, inspired by other cultures and traditions. "
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginBottom="10dp"
+                tools:ignore="HardcodedText"
+                />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
